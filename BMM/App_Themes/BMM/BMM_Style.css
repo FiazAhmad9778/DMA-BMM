@@ -1,0 +1,65 @@
+﻿/*** 
+
+BMM Style Sheet
+
+***/
+
+
+#HeaderWrapper
+{
+    background-image: url('/Images/BMM/Header/header_repeat.jpg');
+}
+
+#Header
+{
+    background-image: url('/Images/BMM/Header/header.jpg');
+}
+
+.Navigation > li.Active span.Tab > img.LeftCap
+{
+    background-image: url('/Images/BMM/Header/nav_left_cap.png');
+}
+.Navigation > li.Active span.Tab > span.Name
+{
+    background-image: url('/Images/BMM/Header/nav_middle_repeat.gif');
+}
+.Navigation > li.Active span.Tab > img.RightCap
+{
+    background-image: url('/Images/BMM/Header/nav_right_cap.png');
+}
+.SubNavigation > li.Active
+{
+    background-image: url('/Images/BMM/Header/subnav_active_arrow.png');
+}
+
+.rscLinkImg  
+{
+    background: url(/Images/BMM/btn_spell_check.png) no-repeat 0 0 transparent;
+    display: block;
+    height: 28px;
+    width: 82px;
+    overflow:hidden;
+    text-decoration:none; 
+    text-indent:-9999px; 
+}
+
+h1, h2
+{
+    color: #00693e;   
+}
+
+.Report_DivHeader,
+#Patient_Header
+{
+    background-color: #00693e;
+}
+
+.Report_DivContent > div > div > a:hover
+{
+    color: #00693e;   
+}
+
+form > .Header
+{
+    background-color: #00693e;  
+}

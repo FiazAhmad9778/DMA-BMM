@@ -1,0 +1,81 @@
+﻿
+#Home_Dates
+{
+    margin: 15px 0;
+    height: 33px;
+    line-height: 33px;
+}
+
+#Home_Dates > div, #Home_Dates > div > div
+{
+    margin: 0;
+    padding: 0;
+}
+
+.RadPicker {
+    display: inline-block !important;
+}
+.RadPicker, .RadPicker > table
+{
+    width: 125px !important;
+}
+
+#Home_Dates > div > div
+{
+    padding-right: 20px;
+    height: 33px;
+    float: left;
+    line-height: 33px;
+    font-weight: bold !important;
+    font-size: 14px;
+}
+
+table#HomePageReport
+{
+    padding: 15px 0 15px 0;
+}
+
+table#HomePageReport > tbody > tr > td
+{
+    font-weight: bold;
+ 
+    text-align: center;
+    vertical-align: top;
+    font-size: 14px;
+}
+
+table#HomePageReport > tbody > tr > td > div
+{
+    padding: 10px 45px 10px 45px;    
+    margin: 0px 0px 25px 0px;
+
+}
+
+table#HomePageReport > tbody > tr > td > div > div
+{
+    font-weight: normal;
+    font-size: 12px;
+    padding-top: 3px;
+}
+
+.Report_DivHeader
+{
+    height: 40px;
+    width: 550px;
+}
+
+.Report_DivHeader > h2
+{
+    color: #f3f1e9;
+    line-height: 40px;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.Report_DivContent
+{
+    width: 550px;
+    min-height: 20px;
+    background-color: #e4dfc8;
+}
+

@@ -1,0 +1,110 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.33403.129
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMM", "BMM\BMM.csproj", "{8087A80F-2EC2-4343-A260-05B94D2EF966}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMM_DAL", "BMM_DAL\BMM_DAL.csproj", "{4CC8E5AA-51B1-4280-8080-6323FFBC2D81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMM_BAL", "BMM_BAL\BMM_BAL.csproj", "{B53BBA0A-20AD-4EFC-AE2F-8AF36078BA5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMM_Reports", "BMM.Reports\BMM_Reports.csproj", "{8C29D503-66C0-4211-98D0-5DFDAA8647B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfiniedgeLibrary.ExceptionHandling", "InfiniedgeLibrary\InfiniedgeLibrary.ExceptionHandling\InfiniedgeLibrary.ExceptionHandling.csproj", "{DF3A40BF-79B9-430D-84D7-6381B0497962}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "BMM.ReadyRoll", "BMM.ReadyRoll\BMM.ReadyRoll.sqlproj", "{8B29A23B-B092-44CC-A527-D49AC2C9748C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8087A80F-2EC2-4343-A260-05B94D2EF966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8087A80F-2EC2-4343-A260-05B94D2EF966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8087A80F-2EC2-4343-A260-05B94D2EF966}.Debug|x86.ActiveCfg = Debug|x86
+		{8087A80F-2EC2-4343-A260-05B94D2EF966}.Debug|x86.Build.0 = Debug|x86
+		{8087A80F-2EC2-4343-A260-05B94D2EF966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8087A80F-2EC2-4343-A260-05B94D2EF966}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8087A80F-2EC2-4343-A260-05B94D2EF966}.Release|x86.ActiveCfg = Release|x86
+		{8087A80F-2EC2-4343-A260-05B94D2EF966}.Release|x86.Build.0 = Release|x86
+		{4CC8E5AA-51B1-4280-8080-6323FFBC2D81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CC8E5AA-51B1-4280-8080-6323FFBC2D81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CC8E5AA-51B1-4280-8080-6323FFBC2D81}.Debug|x86.ActiveCfg = Debug|x86
+		{4CC8E5AA-51B1-4280-8080-6323FFBC2D81}.Debug|x86.Build.0 = Debug|x86
+		{4CC8E5AA-51B1-4280-8080-6323FFBC2D81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CC8E5AA-51B1-4280-8080-6323FFBC2D81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CC8E5AA-51B1-4280-8080-6323FFBC2D81}.Release|x86.ActiveCfg = Release|x86
+		{4CC8E5AA-51B1-4280-8080-6323FFBC2D81}.Release|x86.Build.0 = Release|x86
+		{B53BBA0A-20AD-4EFC-AE2F-8AF36078BA5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B53BBA0A-20AD-4EFC-AE2F-8AF36078BA5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B53BBA0A-20AD-4EFC-AE2F-8AF36078BA5A}.Debug|x86.ActiveCfg = Debug|x86
+		{B53BBA0A-20AD-4EFC-AE2F-8AF36078BA5A}.Debug|x86.Build.0 = Debug|x86
+		{B53BBA0A-20AD-4EFC-AE2F-8AF36078BA5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B53BBA0A-20AD-4EFC-AE2F-8AF36078BA5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B53BBA0A-20AD-4EFC-AE2F-8AF36078BA5A}.Release|x86.ActiveCfg = Release|x86
+		{B53BBA0A-20AD-4EFC-AE2F-8AF36078BA5A}.Release|x86.Build.0 = Release|x86
+		{8C29D503-66C0-4211-98D0-5DFDAA8647B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C29D503-66C0-4211-98D0-5DFDAA8647B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C29D503-66C0-4211-98D0-5DFDAA8647B9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8C29D503-66C0-4211-98D0-5DFDAA8647B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C29D503-66C0-4211-98D0-5DFDAA8647B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C29D503-66C0-4211-98D0-5DFDAA8647B9}.Release|x86.ActiveCfg = Release|Any CPU
+		{DF3A40BF-79B9-430D-84D7-6381B0497962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF3A40BF-79B9-430D-84D7-6381B0497962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF3A40BF-79B9-430D-84D7-6381B0497962}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DF3A40BF-79B9-430D-84D7-6381B0497962}.Debug|x86.Build.0 = Debug|Any CPU
+		{DF3A40BF-79B9-430D-84D7-6381B0497962}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF3A40BF-79B9-430D-84D7-6381B0497962}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF3A40BF-79B9-430D-84D7-6381B0497962}.Release|x86.ActiveCfg = Release|Any CPU
+		{DF3A40BF-79B9-430D-84D7-6381B0497962}.Release|x86.Build.0 = Release|Any CPU
+		{8B29A23B-B092-44CC-A527-D49AC2C9748C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B29A23B-B092-44CC-A527-D49AC2C9748C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B29A23B-B092-44CC-A527-D49AC2C9748C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8B29A23B-B092-44CC-A527-D49AC2C9748C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8B29A23B-B092-44CC-A527-D49AC2C9748C}.Debug|x86.Build.0 = Debug|Any CPU
+		{8B29A23B-B092-44CC-A527-D49AC2C9748C}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{8B29A23B-B092-44CC-A527-D49AC2C9748C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B29A23B-B092-44CC-A527-D49AC2C9748C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B29A23B-B092-44CC-A527-D49AC2C9748C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8B29A23B-B092-44CC-A527-D49AC2C9748C}.Release|x86.ActiveCfg = Release|Any CPU
+		{8B29A23B-B092-44CC-A527-D49AC2C9748C}.Release|x86.Build.0 = Release|Any CPU
+		{8B29A23B-B092-44CC-A527-D49AC2C9748C}.Release|x86.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {357C03C6-FCD4-450C-8F6D-30942A04AFBD}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs2017:8080/tfs/webdev
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BMM\\BMM.csproj
+		SccProjectName1 = BMM
+		SccLocalPath1 = BMM
+		SccProjectUniqueName2 = BMM_DAL\\BMM_DAL.csproj
+		SccProjectName2 = BMM_DAL
+		SccLocalPath2 = BMM_DAL
+		SccProjectUniqueName3 = BMM_BAL\\BMM_BAL.csproj
+		SccProjectName3 = BMM_BAL
+		SccLocalPath3 = BMM_BAL
+		SccProjectUniqueName4 = BMM.Reports\\BMM_Reports.csproj
+		SccProjectName4 = BMM.Reports
+		SccLocalPath4 = BMM.Reports
+		SccProjectUniqueName5 = InfiniedgeLibrary\\InfiniedgeLibrary.ExceptionHandling\\InfiniedgeLibrary.ExceptionHandling.csproj
+		SccProjectName5 = InfiniedgeLibrary/InfiniedgeLibrary.ExceptionHandling
+		SccLocalPath5 = InfiniedgeLibrary\\InfiniedgeLibrary.ExceptionHandling
+		SccProjectUniqueName6 = BMM.ReadyRoll\\BMM.ReadyRoll.sqlproj
+		SccProjectName6 = BMM.ReadyRoll
+		SccLocalPath6 = BMM.ReadyRoll
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = BMM.vsmdi
+	EndGlobalSection
+EndGlobal

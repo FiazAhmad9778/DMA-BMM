@@ -1,0 +1,909 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BMM2" Class="DataModelDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQL2019;Initial Catalog=DMA-Dev-GG;Persist Security Info=True;User ID=AppUser" SettingsObjectName="BMM_DAL.Properties.Settings" SettingsPropertyName="BMM2ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Attorney" Member="Attorneys">
+    <Type Name="Attorney">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ContactListID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FirmID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="isActiveStatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Street1" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Street2" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="StateID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ZipCode" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Fax" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DiscountNotes" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DepositAmountRequired" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Temp_AttorneyID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Attorney_InvoiceAttorney" Member="InvoiceAttorneys" ThisKey="ID" OtherKey="AttorneyID" Type="InvoiceAttorney" />
+      <Association Name="Company_Attorney" Member="Company" ThisKey="CompanyID" OtherKey="ID" Type="Company" IsForeignKey="true" />
+      <Association Name="ContactList_Attorney" Member="ContactList" ThisKey="ContactListID" OtherKey="ID" Type="ContactList" IsForeignKey="true" />
+      <Association Name="Firm_Attorney" Member="Firm" ThisKey="FirmID" OtherKey="ID" Type="Firm" IsForeignKey="true" />
+      <Association Name="State_Attorney" Member="State" ThisKey="StateID" OtherKey="ID" Type="State" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="User">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Position" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="User_Comment" Member="Comments" ThisKey="ID" OtherKey="UserID" Type="Comment" />
+      <Association Name="User_InvoiceChangeLog" Member="InvoiceChangeLogs" ThisKey="ID" OtherKey="UserID" Type="InvoiceChangeLog" />
+      <Association Name="User_PatientChangeLog" Member="PatientChangeLogs" ThisKey="ID" OtherKey="UserID" Type="PatientChangeLog" />
+      <Association Name="User_UserPermission" Member="UserPermissions" ThisKey="ID" OtherKey="UserID" Type="UserPermission" />
+      <Association Name="Company_User" Member="Company" ThisKey="CompanyID" OtherKey="ID" Type="Company" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Comments" Member="Comments">
+    <Type Name="Comment">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InvoiceID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CommentTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="isIncludedOnReports" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="User_Comment" Member="User" ThisKey="UserID" OtherKey="ID" Type="User" IsForeignKey="true" />
+      <Association Name="CommentType_Comment" Member="CommentType" ThisKey="CommentTypeID" OtherKey="ID" Type="CommentType" IsForeignKey="true" />
+      <Association Name="Invoice_Comment" Member="Invoice" ThisKey="InvoiceID" OtherKey="ID" Type="Invoice" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CommentType" Member="CommentTypes">
+    <Type Name="CommentType">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="CommentType_Comment" Member="Comments" ThisKey="ID" OtherKey="CommentTypeID" Type="Comment" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Company" Member="Companies">
+    <Type Name="Company">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="LongName" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="SiteURL" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ThemeName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ContactFirstName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ContactLastName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ContactTitle" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Fax" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="CityStateZip" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="FederalID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FromEmailAddress" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Company_Attorney" Member="Attorneys" ThisKey="ID" OtherKey="CompanyID" Type="Attorney" />
+      <Association Name="Company_User" Member="Users" ThisKey="ID" OtherKey="CompanyID" Type="User" />
+      <Association Name="Company_CPTCode" Member="CPTCodes" ThisKey="ID" OtherKey="CompanyID" Type="CPTCode" />
+      <Association Name="Company_Firm" Member="Firms" ThisKey="ID" OtherKey="CompanyID" Type="Firm" />
+      <Association Name="Company_Invoice" Member="Invoices" ThisKey="ID" OtherKey="CompanyID" Type="Invoice" />
+      <Association Name="Company_LoanTerm" Member="LoanTerms" ThisKey="ID" OtherKey="CompanyID" Type="LoanTerm" />
+      <Association Name="Company_Patient" Member="Patients" ThisKey="ID" OtherKey="CompanyID" Type="Patient" />
+      <Association Name="Company_Physician" Member="Physicians" ThisKey="ID" OtherKey="CompanyID" Type="Physician" />
+      <Association Name="Company_Provider" Member="Providers" ThisKey="ID" OtherKey="CompanyID" Type="Provider" />
+      <Association Name="Company_Surgery" Member="Surgeries" ThisKey="ID" OtherKey="CompanyID" Type="Surgery" />
+      <Association Name="Company_Test" Member="Tests" ThisKey="ID" OtherKey="CompanyID" Type="Test" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ContactList" Member="ContactLists">
+    <Type Name="ContactList">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Temp_AttorneyID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Temp_ProviderID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="ContactList_Attorney" Member="Attorneys" ThisKey="ID" OtherKey="ContactListID" Type="Attorney" />
+      <Association Name="ContactList_Contact" Member="Contacts" ThisKey="ID" OtherKey="ContactListID" Type="Contact" />
+      <Association Name="ContactList_Firm" Member="Firms" ThisKey="ID" OtherKey="ContactListID" Type="Firm" />
+      <Association Name="ContactList_Physician" Member="Physicians" ThisKey="ID" OtherKey="ContactListID" Type="Physician" />
+      <Association Name="ContactList_Provider" Member="Providers" ThisKey="ID" OtherKey="ContactListID" Type="Provider" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Contacts" Member="Contacts">
+    <Type Name="Contact">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ContactListID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Position" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="ContactList_Contact" Member="ContactList" ThisKey="ContactListID" OtherKey="ID" Type="ContactList" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CPTCodes" Member="CPTCodes">
+    <Type Name="CPTCode">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="CPTCode_SurgeryInvoice_Provider_CPTCode" Member="SurgeryInvoice_Provider_CPTCodes" ThisKey="ID" OtherKey="CPTCodeID" Type="SurgeryInvoice_Provider_CPTCode" />
+      <Association Name="CPTCode_TestInvoice_Test_CPTCode" Member="TestInvoice_Test_CPTCodes" ThisKey="ID" OtherKey="CPTCodeID" Type="TestInvoice_Test_CPTCode" />
+      <Association Name="Company_CPTCode" Member="Company" ThisKey="CompanyID" OtherKey="ID" Type="Company" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Firm" Member="Firms">
+    <Type Name="Firm">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ContactListID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="isActiveStatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Street1" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Street2" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="StateID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ZipCode" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Fax" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Firm_Attorney" Member="Attorneys" ThisKey="ID" OtherKey="FirmID" Type="Attorney" />
+      <Association Name="Firm_InvoiceFirm" Member="InvoiceFirms" ThisKey="ID" OtherKey="FirmID" Type="InvoiceFirm" />
+      <Association Name="Company_Firm" Member="Company" ThisKey="CompanyID" OtherKey="ID" Type="Company" IsForeignKey="true" />
+      <Association Name="ContactList_Firm" Member="ContactList" ThisKey="ContactListID" OtherKey="ID" Type="ContactList" IsForeignKey="true" />
+      <Association Name="State_Firm" Member="State" ThisKey="StateID" OtherKey="ID" Type="State" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Invoice" Member="Invoices">
+    <Type Name="Invoice">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InvoiceNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DateOfAccident" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="InvoiceStatusTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="isComplete" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="InvoicePhysicianID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InvoiceAttorneyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="InvoicePatientID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="InvoiceTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TestInvoiceID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SurgeryInvoiceID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InvoiceClosedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DatePaid" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ServiceFeeWaived" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="LossesAmount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="YearlyInterest" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="LoanTermMonths" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ServiceFeeWaivedMonths" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CalculatedCumulativeIntrest" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UseAttorneyTerms" Type="System.Boolean" DbType="Bit NULL" CanBeNull="true" />
+      <Column Name="CustomTerms" Type="System.Boolean" DbType="Bit NULL" CanBeNull="true" />
+      <Association Name="Invoice_Comment" Member="Comments" ThisKey="ID" OtherKey="InvoiceID" Type="Comment" />
+      <Association Name="Invoice_InvoiceChangeLog" Member="InvoiceChangeLogs" ThisKey="ID" OtherKey="InvoiceID" Type="InvoiceChangeLog" />
+      <Association Name="Invoice_InvoiceInterestCalculationLog" Member="InvoiceInterestCalculationLogs" ThisKey="ID" OtherKey="InvoiceID" Type="InvoiceInterestCalculationLog" />
+      <Association Name="Invoice_Payment" Member="Payments" ThisKey="ID" OtherKey="InvoiceID" Type="Payment" />
+      <Association Name="Company_Invoice" Member="Company" ThisKey="CompanyID" OtherKey="ID" Type="Company" IsForeignKey="true" />
+      <Association Name="InvoiceAttorney_Invoice" Member="InvoiceAttorney" ThisKey="InvoiceAttorneyID" OtherKey="ID" Type="InvoiceAttorney" IsForeignKey="true" />
+      <Association Name="InvoicePatient_Invoice" Member="InvoicePatient" ThisKey="InvoicePatientID" OtherKey="ID" Type="InvoicePatient" IsForeignKey="true" />
+      <Association Name="InvoicePhysician_Invoice" Member="InvoicePhysician" ThisKey="InvoicePhysicianID" OtherKey="ID" Type="InvoicePhysician" IsForeignKey="true" />
+      <Association Name="InvoiceStatusType_Invoice" Member="InvoiceStatusType" ThisKey="InvoiceStatusTypeID" OtherKey="ID" Type="InvoiceStatusType" IsForeignKey="true" />
+      <Association Name="InvoiceType_Invoice" Member="InvoiceType" ThisKey="InvoiceTypeID" OtherKey="ID" Type="InvoiceType" IsForeignKey="true" />
+      <Association Name="SurgeryInvoice_Invoice" Member="SurgeryInvoice" ThisKey="SurgeryInvoiceID" OtherKey="ID" Type="SurgeryInvoice" IsForeignKey="true" />
+      <Association Name="TestInvoice_Invoice" Member="TestInvoice" ThisKey="TestInvoiceID" OtherKey="ID" Type="TestInvoice" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InvoiceAttorney" Member="InvoiceAttorneys">
+    <Type Name="InvoiceAttorney">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AttorneyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="InvoiceContactListID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="InvoiceFirmID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="isActiveStatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Street1" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Street2" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="StateID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ZipCode" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Fax" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DiscountNotes" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DepositAmountRequired" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Temp_InvoiceNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="InvoiceAttorney_Invoice" Member="Invoices" ThisKey="ID" OtherKey="InvoiceAttorneyID" Type="Invoice" />
+      <Association Name="Attorney_InvoiceAttorney" Member="Attorney" ThisKey="AttorneyID" OtherKey="ID" Type="Attorney" IsForeignKey="true" />
+      <Association Name="InvoiceContactList_InvoiceAttorney" Member="InvoiceContactList" ThisKey="InvoiceContactListID" OtherKey="ID" Type="InvoiceContactList" IsForeignKey="true" />
+      <Association Name="InvoiceFirm_InvoiceAttorney" Member="InvoiceFirm" ThisKey="InvoiceFirmID" OtherKey="ID" Type="InvoiceFirm" IsForeignKey="true" />
+      <Association Name="State_InvoiceAttorney" Member="State" ThisKey="StateID" OtherKey="ID" Type="State" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InvoiceChangeLog" Member="InvoiceChangeLogs">
+    <Type Name="InvoiceChangeLog">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InvoiceID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="InvoiceChangeLogTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Invoice_InvoiceChangeLog" Member="Invoice" ThisKey="InvoiceID" OtherKey="ID" Type="Invoice" IsForeignKey="true" />
+      <Association Name="User_InvoiceChangeLog" Member="User" ThisKey="UserID" OtherKey="ID" Type="User" IsForeignKey="true" />
+      <Association Name="InvoiceChangeLogType_InvoiceChangeLog" Member="InvoiceChangeLogType" ThisKey="InvoiceChangeLogTypeID" OtherKey="ID" Type="InvoiceChangeLogType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InvoiceChangeLogType" Member="InvoiceChangeLogTypes">
+    <Type Name="InvoiceChangeLogType">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="InvoiceChangeLogType_InvoiceChangeLog" Member="InvoiceChangeLogs" ThisKey="ID" OtherKey="InvoiceChangeLogTypeID" Type="InvoiceChangeLog" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InvoiceContactList" Member="InvoiceContactLists">
+    <Type Name="InvoiceContactList">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Temp_AttorneyID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="InvoiceContactList_InvoiceAttorney" Member="InvoiceAttorneys" ThisKey="ID" OtherKey="InvoiceContactListID" Type="InvoiceAttorney" />
+      <Association Name="InvoiceContactList_InvoiceContact" Member="InvoiceContacts" ThisKey="ID" OtherKey="InvoiceContactListID" Type="InvoiceContact" />
+      <Association Name="InvoiceContactList_InvoiceFirm" Member="InvoiceFirms" ThisKey="ID" OtherKey="InvoiceContactListID" Type="InvoiceFirm" />
+      <Association Name="InvoiceContactList_InvoicePhysician" Member="InvoicePhysicians" ThisKey="ID" OtherKey="InvoiceContactListID" Type="InvoicePhysician" />
+      <Association Name="InvoiceContactList_InvoiceProvider" Member="InvoiceProviders" ThisKey="ID" OtherKey="InvoiceContactListID" Type="InvoiceProvider" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InvoiceContacts" Member="InvoiceContacts">
+    <Type Name="InvoiceContact">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InvoiceContactListID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Position" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="InvoiceContactList_InvoiceContact" Member="InvoiceContactList" ThisKey="InvoiceContactListID" OtherKey="ID" Type="InvoiceContactList" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InvoiceFirm" Member="InvoiceFirms">
+    <Type Name="InvoiceFirm">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FirmID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="InvoiceContactListID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="isActiveStatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Street1" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Street2" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="StateID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ZipCode" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Fax" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="InvoiceFirm_InvoiceAttorney" Member="InvoiceAttorneys" ThisKey="ID" OtherKey="InvoiceFirmID" Type="InvoiceAttorney" />
+      <Association Name="Firm_InvoiceFirm" Member="Firm" ThisKey="FirmID" OtherKey="ID" Type="Firm" IsForeignKey="true" />
+      <Association Name="InvoiceContactList_InvoiceFirm" Member="InvoiceContactList" ThisKey="InvoiceContactListID" OtherKey="ID" Type="InvoiceContactList" IsForeignKey="true" />
+      <Association Name="State_InvoiceFirm" Member="State" ThisKey="StateID" OtherKey="ID" Type="State" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InvoiceInterestCalculationLog" Member="InvoiceInterestCalculationLogs">
+    <Type Name="InvoiceInterestCalculationLog">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InvoiceID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="YearlyInterest" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="ServiceFeeWaivedMonths" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AmortizationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DateInterestBegins" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TotalCost" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="TotalPPODiscount" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="TotalAppliedPayments" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="BalanceDue" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="CalculatedInterest" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="PreviousCumulativeInterest" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="NewCumulativeInterest" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Invoice_InvoiceInterestCalculationLog" Member="Invoice" ThisKey="InvoiceID" OtherKey="ID" Type="Invoice" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InvoicePatient" Member="InvoicePatients">
+    <Type Name="InvoicePatient">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PatientID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="isActiveStatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="SSN" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Street1" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Street2" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="StateID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ZipCode" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="WorkPhone" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="DateOfBirth" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="InvoicePatient_Invoice" Member="Invoices" ThisKey="ID" OtherKey="InvoicePatientID" Type="Invoice" />
+      <Association Name="Patient_InvoicePatient" Member="Patient" ThisKey="PatientID" OtherKey="ID" Type="Patient" IsForeignKey="true" />
+      <Association Name="State_InvoicePatient" Member="State" ThisKey="StateID" OtherKey="ID" Type="State" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InvoicePhysician" Member="InvoicePhysicians">
+    <Type Name="InvoicePhysician">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InvoiceContactListID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PhysicianID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="isActiveStatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Street1" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Street2" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="StateID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ZipCode" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Fax" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmailAddress" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="InvoicePhysician_Invoice" Member="Invoices" ThisKey="ID" OtherKey="InvoicePhysicianID" Type="Invoice" />
+      <Association Name="InvoiceContactList_InvoicePhysician" Member="InvoiceContactList" ThisKey="InvoiceContactListID" OtherKey="ID" Type="InvoiceContactList" IsForeignKey="true" />
+      <Association Name="Physician_InvoicePhysician" Member="Physician" ThisKey="PhysicianID" OtherKey="ID" Type="Physician" IsForeignKey="true" />
+      <Association Name="State_InvoicePhysician" Member="State" ThisKey="StateID" OtherKey="ID" Type="State" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InvoiceProvider" Member="InvoiceProviders">
+    <Type Name="InvoiceProvider">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InvoiceContactListID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ProviderID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="isActiveStatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Street1" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Street2" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="StateID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ZipCode" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Fax" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="FacilityAbbreviation" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DiscountPercentage" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="MRICostTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MRICostFlatRate" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="MRICostPercentage" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="DaysUntilPaymentDue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Deposits" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="InvoiceProvider_SurgeryInvoice_Provider" Member="SurgeryInvoice_Providers" ThisKey="ID" OtherKey="InvoiceProviderID" Type="SurgeryInvoice_Provider" />
+      <Association Name="InvoiceProvider_TestInvoice_Test" Member="TestInvoice_Tests" ThisKey="ID" OtherKey="InvoiceProviderID" Type="TestInvoice_Test" />
+      <Association Name="InvoiceContactList_InvoiceProvider" Member="InvoiceContactList" ThisKey="InvoiceContactListID" OtherKey="ID" Type="InvoiceContactList" IsForeignKey="true" />
+      <Association Name="MRICostType_InvoiceProvider" Member="MRICostType" ThisKey="MRICostTypeID" OtherKey="ID" Type="MRICostType" IsForeignKey="true" />
+      <Association Name="Provider_InvoiceProvider" Member="Provider" ThisKey="ProviderID" OtherKey="ID" Type="Provider" IsForeignKey="true" />
+      <Association Name="State_InvoiceProvider" Member="State" ThisKey="StateID" OtherKey="ID" Type="State" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InvoiceStatusType" Member="InvoiceStatusTypes">
+    <Type Name="InvoiceStatusType">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="InvoiceStatusType_Invoice" Member="Invoices" ThisKey="ID" OtherKey="InvoiceStatusTypeID" Type="Invoice" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InvoiceType" Member="InvoiceTypes">
+    <Type Name="InvoiceType">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="InvoiceType_Invoice" Member="Invoices" ThisKey="ID" OtherKey="InvoiceTypeID" Type="Invoice" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LoanTerms" Member="LoanTerms">
+    <Type Name="LoanTerm">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Testing_YearlyInterest" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="Testing_LoanTermMonths" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Testing_ServiceFeeWaivedMonths" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Surgery_YearlyInterest" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="Surgery_LoanTermMonths" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Surgery_ServiceFeeWaivedMonths" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Company_LoanTerm" Member="Company" ThisKey="CompanyID" OtherKey="ID" Type="Company" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MRICostType" Member="MRICostTypes">
+    <Type Name="MRICostType">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="MRICostType_InvoiceProvider" Member="InvoiceProviders" ThisKey="ID" OtherKey="MRICostTypeID" Type="InvoiceProvider" />
+      <Association Name="MRICostType_Provider" Member="Providers" ThisKey="ID" OtherKey="MRICostTypeID" Type="Provider" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Patient" Member="Patients">
+    <Type Name="Patient">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="isActiveStatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="SSN" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Street1" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Street2" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="StateID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ZipCode" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="WorkPhone" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="DateOfBirth" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Patient_InvoicePatient" Member="InvoicePatients" ThisKey="ID" OtherKey="PatientID" Type="InvoicePatient" />
+      <Association Name="Patient_PatientChangeLog" Member="PatientChangeLogs" ThisKey="ID" OtherKey="PatientID" Type="PatientChangeLog" />
+      <Association Name="Company_Patient" Member="Company" ThisKey="CompanyID" OtherKey="ID" Type="Company" IsForeignKey="true" />
+      <Association Name="State_Patient" Member="State" ThisKey="StateID" OtherKey="ID" Type="State" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PatientChangeLog" Member="PatientChangeLogs">
+    <Type Name="PatientChangeLog">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PatientID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="InformationUpdated" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Patient_PatientChangeLog" Member="Patient" ThisKey="PatientID" OtherKey="ID" Type="Patient" IsForeignKey="true" />
+      <Association Name="User_PatientChangeLog" Member="User" ThisKey="UserID" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Payments" Member="Payments">
+    <Type Name="Payment">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InvoiceID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PaymentTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DatePaid" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="CheckNumber" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Invoice_Payment" Member="Invoice" ThisKey="InvoiceID" OtherKey="ID" Type="Invoice" IsForeignKey="true" />
+      <Association Name="PaymentType_Payment" Member="PaymentType" ThisKey="PaymentTypeID" OtherKey="ID" Type="PaymentType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PaymentType" Member="PaymentTypes">
+    <Type Name="PaymentType">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="PaymentType_Payment" Member="Payments" ThisKey="ID" OtherKey="PaymentTypeID" Type="Payment" />
+      <Association Name="PaymentType_SurgeryInvoice_Provider_Payment" Member="SurgeryInvoice_Provider_Payments" ThisKey="ID" OtherKey="PaymentTypeID" Type="SurgeryInvoice_Provider_Payment" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Permissions" Member="Permissions">
+    <Type Name="Permission">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Permission_UserPermission" Member="UserPermissions" ThisKey="ID" OtherKey="PermissionID" Type="UserPermission" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Physician" Member="Physicians">
+    <Type Name="Physician">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ContactListID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="isActiveStatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Street1" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Street2" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="StateID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ZipCode" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Fax" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmailAddress" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Physician_InvoicePhysician" Member="InvoicePhysicians" ThisKey="ID" OtherKey="PhysicianID" Type="InvoicePhysician" />
+      <Association Name="Company_Physician" Member="Company" ThisKey="CompanyID" OtherKey="ID" Type="Company" IsForeignKey="true" />
+      <Association Name="ContactList_Physician" Member="ContactList" ThisKey="ContactListID" OtherKey="ID" Type="ContactList" IsForeignKey="true" />
+      <Association Name="State_Physician" Member="State" ThisKey="StateID" OtherKey="ID" Type="State" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Provider" Member="Providers">
+    <Type Name="Provider">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ContactListID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="isActiveStatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Street1" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Street2" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="StateID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ZipCode" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Fax" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="FacilityAbbreviation" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DiscountPercentage" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="MRICostTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MRICostFlatRate" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="MRICostPercentage" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="DaysUntilPaymentDue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Deposits" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Street1_Billing" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Street2_Billing" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="City_Billing" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="StateID_Billing" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ZipCode_Billing" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Phone_Billing" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Fax_Billing" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email_Billing" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="TaxID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Provider_InvoiceProvider" Member="InvoiceProviders" ThisKey="ID" OtherKey="ProviderID" Type="InvoiceProvider" />
+      <Association Name="Company_Provider" Member="Company" ThisKey="CompanyID" OtherKey="ID" Type="Company" IsForeignKey="true" />
+      <Association Name="ContactList_Provider" Member="ContactList" ThisKey="ContactListID" OtherKey="ID" Type="ContactList" IsForeignKey="true" />
+      <Association Name="MRICostType_Provider" Member="MRICostType" ThisKey="MRICostTypeID" OtherKey="ID" Type="MRICostType" IsForeignKey="true" />
+      <Association Name="State_Provider" Member="State" ThisKey="StateID" OtherKey="ID" Type="State" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.States" Member="States">
+    <Type Name="State">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Abbreviation" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="State_Attorney" Member="Attorneys" ThisKey="ID" OtherKey="StateID" Type="Attorney" />
+      <Association Name="State_Firm" Member="Firms" ThisKey="ID" OtherKey="StateID" Type="Firm" />
+      <Association Name="State_InvoiceAttorney" Member="InvoiceAttorneys" ThisKey="ID" OtherKey="StateID" Type="InvoiceAttorney" />
+      <Association Name="State_InvoiceFirm" Member="InvoiceFirms" ThisKey="ID" OtherKey="StateID" Type="InvoiceFirm" />
+      <Association Name="State_InvoicePatient" Member="InvoicePatients" ThisKey="ID" OtherKey="StateID" Type="InvoicePatient" />
+      <Association Name="State_InvoicePhysician" Member="InvoicePhysicians" ThisKey="ID" OtherKey="StateID" Type="InvoicePhysician" />
+      <Association Name="State_InvoiceProvider" Member="InvoiceProviders" ThisKey="ID" OtherKey="StateID" Type="InvoiceProvider" />
+      <Association Name="State_Patient" Member="Patients" ThisKey="ID" OtherKey="StateID" Type="Patient" />
+      <Association Name="State_Physician" Member="Physicians" ThisKey="ID" OtherKey="StateID" Type="Physician" />
+      <Association Name="State_Provider" Member="Providers" ThisKey="ID" OtherKey="StateID" Type="Provider" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Surgery" Member="Surgeries">
+    <Type Name="Surgery">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Surgery_SurgeryInvoice_Surgery" Member="SurgeryInvoice_Surgeries" ThisKey="ID" OtherKey="SurgeryID" Type="SurgeryInvoice_Surgery" />
+      <Association Name="Company_Surgery" Member="Company" ThisKey="CompanyID" OtherKey="ID" Type="Company" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SurgeryInvoice" Member="SurgeryInvoices">
+    <Type Name="SurgeryInvoice">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="SurgeryInvoice_Invoice" Member="Invoices" ThisKey="ID" OtherKey="SurgeryInvoiceID" Type="Invoice" />
+      <Association Name="SurgeryInvoice_SurgeryInvoice_Provider" Member="SurgeryInvoice_Providers" ThisKey="ID" OtherKey="SurgeryInvoiceID" Type="SurgeryInvoice_Provider" />
+      <Association Name="SurgeryInvoice_SurgeryInvoice_Surgery" Member="SurgeryInvoice_Surgeries" ThisKey="ID" OtherKey="SurgeryInvoiceID" Type="SurgeryInvoice_Surgery" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SurgeryInvoice_Provider_CPTCodes" Member="SurgeryInvoice_Provider_CPTCodes">
+    <Type Name="SurgeryInvoice_Provider_CPTCode">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SurgeryInvoice_ProviderID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CPTCodeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="CPTCode_SurgeryInvoice_Provider_CPTCode" Member="CPTCode" ThisKey="CPTCodeID" OtherKey="ID" Type="CPTCode" IsForeignKey="true" />
+      <Association Name="SurgeryInvoice_Provider_SurgeryInvoice_Provider_CPTCode" Member="SurgeryInvoice_Provider" ThisKey="SurgeryInvoice_ProviderID" OtherKey="ID" Type="SurgeryInvoice_Provider" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SurgeryInvoice_Provider_Payments" Member="SurgeryInvoice_Provider_Payments">
+    <Type Name="SurgeryInvoice_Provider_Payment">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SurgeryInvoice_ProviderID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PaymentTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DatePaid" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="CheckNumber" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="PaymentType_SurgeryInvoice_Provider_Payment" Member="PaymentType" ThisKey="PaymentTypeID" OtherKey="ID" Type="PaymentType" IsForeignKey="true" />
+      <Association Name="SurgeryInvoice_Provider_SurgeryInvoice_Provider_Payment" Member="SurgeryInvoice_Provider" ThisKey="SurgeryInvoice_ProviderID" OtherKey="ID" Type="SurgeryInvoice_Provider" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SurgeryInvoice_Provider_Services" Member="SurgeryInvoice_Provider_Services">
+    <Type Name="SurgeryInvoice_Provider_Service">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SurgeryInvoice_ProviderID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EstimatedCost" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Cost" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Discount" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="PPODiscount" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="DueDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="AmountDue" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="CalculateAmountDue" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="AccountNumber" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="SurgeryInvoice_Provider_SurgeryInvoice_Provider_Service" Member="SurgeryInvoice_Provider" ThisKey="SurgeryInvoice_ProviderID" OtherKey="ID" Type="SurgeryInvoice_Provider" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SurgeryInvoice_Providers" Member="SurgeryInvoice_Providers">
+    <Type Name="SurgeryInvoice_Provider">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SurgeryInvoiceID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="InvoiceProviderID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="SurgeryInvoice_Provider_SurgeryInvoice_Provider_CPTCode" Member="SurgeryInvoice_Provider_CPTCodes" ThisKey="ID" OtherKey="SurgeryInvoice_ProviderID" Type="SurgeryInvoice_Provider_CPTCode" />
+      <Association Name="SurgeryInvoice_Provider_SurgeryInvoice_Provider_Payment" Member="SurgeryInvoice_Provider_Payments" ThisKey="ID" OtherKey="SurgeryInvoice_ProviderID" Type="SurgeryInvoice_Provider_Payment" />
+      <Association Name="SurgeryInvoice_Provider_SurgeryInvoice_Provider_Service" Member="SurgeryInvoice_Provider_Services" ThisKey="ID" OtherKey="SurgeryInvoice_ProviderID" Type="SurgeryInvoice_Provider_Service" />
+      <Association Name="InvoiceProvider_SurgeryInvoice_Provider" Member="InvoiceProvider" ThisKey="InvoiceProviderID" OtherKey="ID" Type="InvoiceProvider" IsForeignKey="true" />
+      <Association Name="SurgeryInvoice_SurgeryInvoice_Provider" Member="SurgeryInvoice" ThisKey="SurgeryInvoiceID" OtherKey="ID" Type="SurgeryInvoice" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SurgeryInvoice_Surgery" Member="SurgeryInvoice_Surgeries">
+    <Type Name="SurgeryInvoice_Surgery">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SurgeryInvoiceID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SurgeryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="isInpatient" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Notes" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="isCanceled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="SurgeryInvoice_Surgery_SurgeryInvoice_SurgeryDate" Member="SurgeryInvoice_SurgeryDates" ThisKey="ID" OtherKey="SurgeryInvoice_SurgeryID" Type="SurgeryInvoice_SurgeryDate" />
+      <Association Name="SurgeryInvoice_Surgery_SurgeryInvoice_Surgery_ICDCode" Member="SurgeryInvoice_Surgery_ICDCodes" ThisKey="ID" OtherKey="SurgeryInvoice_SurgeryID" Type="SurgeryInvoice_Surgery_ICDCode" />
+      <Association Name="Surgery_SurgeryInvoice_Surgery" Member="Surgery" ThisKey="SurgeryID" OtherKey="ID" Type="Surgery" IsForeignKey="true" />
+      <Association Name="SurgeryInvoice_SurgeryInvoice_Surgery" Member="SurgeryInvoice" ThisKey="SurgeryInvoiceID" OtherKey="ID" Type="SurgeryInvoice" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SurgeryInvoice_SurgeryDates" Member="SurgeryInvoice_SurgeryDates">
+    <Type Name="SurgeryInvoice_SurgeryDate">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SurgeryInvoice_SurgeryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ScheduledDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="isPrimaryDate" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="SurgeryInvoice_Surgery_SurgeryInvoice_SurgeryDate" Member="SurgeryInvoice_Surgery" ThisKey="SurgeryInvoice_SurgeryID" OtherKey="ID" Type="SurgeryInvoice_Surgery" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Test" Member="Tests">
+    <Type Name="Test">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Test_TestInvoice_Test" Member="TestInvoice_Tests" ThisKey="ID" OtherKey="TestID" Type="TestInvoice_Test" />
+      <Association Name="Company_Test" Member="Company" ThisKey="CompanyID" OtherKey="ID" Type="Company" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TestInvoice" Member="TestInvoices">
+    <Type Name="TestInvoice">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TestTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="TestInvoice_Invoice" Member="Invoices" ThisKey="ID" OtherKey="TestInvoiceID" Type="Invoice" />
+      <Association Name="TestInvoice_TestInvoice_Test" Member="TestInvoice_Tests" ThisKey="ID" OtherKey="TestInvoiceID" Type="TestInvoice_Test" />
+      <Association Name="TestType_TestInvoice" Member="TestType" ThisKey="TestTypeID" OtherKey="ID" Type="TestType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TestInvoice_Test" Member="TestInvoice_Tests">
+    <Type Name="TestInvoice_Test">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TestInvoiceID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TestID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="InvoiceProviderID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Notes" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="TestDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TestTime" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+      <Column Name="NumberOfTests" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MRI" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsPositive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="isCanceled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="TestCost" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="PPODiscount" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="AmountToProvider" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="CalculateAmountToProvider" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ProviderDueDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DepositToProvider" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="AmountPaidToProvider" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CheckNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="AccountNumber" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="TestInvoice_Test_TestInvoice_Test_CPTCode" Member="TestInvoice_Test_CPTCodes" ThisKey="ID" OtherKey="TestInvoice_TestID" Type="TestInvoice_Test_CPTCode" />
+      <Association Name="InvoiceProvider_TestInvoice_Test" Member="InvoiceProvider" ThisKey="InvoiceProviderID" OtherKey="ID" Type="InvoiceProvider" IsForeignKey="true" />
+      <Association Name="Test_TestInvoice_Test" Member="Test" ThisKey="TestID" OtherKey="ID" Type="Test" IsForeignKey="true" />
+      <Association Name="TestInvoice_TestInvoice_Test" Member="TestInvoice" ThisKey="TestInvoiceID" OtherKey="ID" Type="TestInvoice" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TestInvoice_Test_CPTCodes" Member="TestInvoice_Test_CPTCodes">
+    <Type Name="TestInvoice_Test_CPTCode">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TestInvoice_TestID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CPTCodeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="CPTCode_TestInvoice_Test_CPTCode" Member="CPTCode" ThisKey="CPTCodeID" OtherKey="ID" Type="CPTCode" IsForeignKey="true" />
+      <Association Name="TestInvoice_Test_TestInvoice_Test_CPTCode" Member="TestInvoice_Test" ThisKey="TestInvoice_TestID" OtherKey="ID" Type="TestInvoice_Test" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TestType" Member="TestTypes">
+    <Type Name="TestType">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="TestType_TestInvoice" Member="TestInvoices" ThisKey="ID" OtherKey="TestTypeID" Type="TestInvoice" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserPermissions" Member="UserPermissions">
+    <Type Name="UserPermission">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PermissionID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AllowView" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="AllowAdd" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="AllowEdit" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="AllowDelete" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Permission_UserPermission" Member="Permission" ThisKey="PermissionID" OtherKey="ID" Type="Permission" IsForeignKey="true" />
+      <Association Name="User_UserPermission" Member="User" ThisKey="UserID" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AttorneyTerms" Member="AttorneyTerms">
+    <Type Name="AttorneyTerm">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AttorneyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LoanTermsMonths" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="YearlyInterest" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="ServiceFeeWaivedMonths" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TermType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ICDCodes" Member="ICDCodes">
+    <Type Name="ICDCode">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ShortDescription" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="LongDescription" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="ICDVersion" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="ICDCode_SurgeryInvoice_Surgery_ICDCode" Member="SurgeryInvoice_Surgery_ICDCodes" ThisKey="ID" OtherKey="ICDCodeID" Type="SurgeryInvoice_Surgery_ICDCode" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SurgeryInvoice_Surgery_ICDCodes" Member="SurgeryInvoice_Surgery_ICDCodes">
+    <Type Name="SurgeryInvoice_Surgery_ICDCode">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SurgeryInvoice_SurgeryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ICDCodeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Temp_CompanyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="ICDCode_SurgeryInvoice_Surgery_ICDCode" Member="ICDCode" ThisKey="ICDCodeID" OtherKey="ID" Type="ICDCode" IsForeignKey="true" />
+      <Association Name="SurgeryInvoice_Surgery_SurgeryInvoice_Surgery_ICDCode" Member="SurgeryInvoice_Surgery" ThisKey="SurgeryInvoice_SurgeryID" OtherKey="ID" Type="SurgeryInvoice_Surgery" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.procGetGeneralStatistics" Method="procGetGeneralStatistics">
+    <Parameter Name="StartDate" Parameter="startDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="EndDate" Parameter="endDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="CompanyID" Parameter="companyID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="procGetGeneralStatisticsResult">
+      <Column Name="TotalTests" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TotalMRIs" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TotalSurgeries" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TotalAmountCollected" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="TotalPaymentsMade" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.procGetTestInvoiceSummary" Method="procGetTestInvoiceSummary">
+    <Parameter Name="InvoiceID" Parameter="invoiceID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="procGetTestInvoiceSummaryResult">
+      <Column Name="InvoiceID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DateServiceFeeBegins" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="MaturityDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="AmortizationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TotalTestCost_Minus_PPODiscount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="TotalPPODiscount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="CostOfTests_Before_PPODiscount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Principal_Deposits_Paid" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="ServiceFeeReceived" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="AdditionalDeductions" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="BalanceDue" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="CumulativeServiceFeeDue" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="EndingBalance" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="CostOfGoodsSold" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="TotalRevenue" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="TotalCPTs" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="TotalPrincipal" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="TotalDeposits" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.procGetSurgeryInvoiceSummary" Method="procGetSurgeryInvoiceSummary">
+    <Parameter Name="InvoiceID" Parameter="invoiceID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="procGetSurgeryInvoiceSummaryResult">
+      <Column Name="InvoiceID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DateServiceFeeBegins" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="MaturityDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="AmortizationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TotalCost_Minus_PPODiscount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="TotalPPODiscount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Cost_Before_PPODiscount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Principal_Deposits_Paid" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="ServiceFeeReceived" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="AdditionalDeductions" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="BalanceDue" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="CumulativeServiceFeeDue" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="EndingBalance" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="CostOfGoodsSold" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="TotalRevenue" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="TotalCPTs" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="TotalPrincipal" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="TotalDeposits" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.procSearchInvoice_GetByFirstServiceDate" Method="procSearchInvoice_GetByFirstServiceDate">
+    <Parameter Name="SearchDate" Parameter="searchDate" Type="System.DateTime" DbType="DateTime" />
+    <ElementType Name="procSearchInvoice_GetByFirstServiceDateResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

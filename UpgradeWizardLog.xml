@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\BMM.csproj" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditAttorney.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditAttorney.aspx" />
+  <event action="Analyze" type="Success" name="AddEditAttorney.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditAttorney.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditFirm.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditFirm.aspx" />
+  <event action="Analyze" type="Success" name="AddEditFirm.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditFirm.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditInvoice.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditInvoice.aspx" />
+  <event action="Analyze" type="Success" name="AddEditInvoice.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditInvoice.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditPatient.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditPatient.aspx" />
+  <event action="Analyze" type="Success" name="AddEditPatient.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditPatient.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditPhysician.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditPhysician.aspx" />
+  <event action="Analyze" type="Success" name="AddEditPhysician.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditPhysician.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditProvider.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditProvider.aspx" />
+  <event action="Analyze" type="Success" name="AddEditProvider.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditProvider.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditSurgery.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditSurgery.aspx" />
+  <event action="Analyze" type="Success" name="AddEditSurgery.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditSurgery.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditSurgeryProvider.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditSurgeryProvider.aspx" />
+  <event action="Analyze" type="Success" name="AddEditSurgeryProvider.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditSurgeryProvider.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditTest.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditTest.aspx" />
+  <event action="Analyze" type="Success" name="AddEditTest.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditTest.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditUsers.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditUsers.aspx" />
+  <event action="Analyze" type="Success" name="AddEditUsers.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\AddEditUsers.aspx" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Controls\UserControl_AttorneyTerms.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Controls\UserControl_AttorneyTerms.ascx" />
+  <event action="Analyze" type="Success" name="UserControl_AttorneyTerms.ascx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Controls\UserControl_AttorneyTerms.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Controls\UserControl_Contacts.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Controls\UserControl_Contacts.ascx" />
+  <event action="Analyze" type="Success" name="UserControl_Contacts.ascx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Controls\UserControl_Contacts.ascx" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Default.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Default.aspx" />
+  <event action="Analyze" type="Success" name="Default.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Default.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Documents\SurgeryGuarantorAuthorization.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Documents\SurgeryGuarantorAuthorization.aspx" />
+  <event action="Analyze" type="Success" name="SurgeryGuarantorAuthorization.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Documents\SurgeryGuarantorAuthorization.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Documents\SurgeryLetterToPatient.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Documents\SurgeryLetterToPatient.aspx" />
+  <event action="Analyze" type="Success" name="SurgeryLetterToPatient.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Documents\SurgeryLetterToPatient.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Documents\SurgeryWorksheet.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Documents\SurgeryWorksheet.aspx" />
+  <event action="Analyze" type="Success" name="SurgeryWorksheet.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Documents\SurgeryWorksheet.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Documents\TestGuarantorAuthorization.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Documents\TestGuarantorAuthorization.aspx" />
+  <event action="Analyze" type="Success" name="TestGuarantorAuthorization.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Documents\TestGuarantorAuthorization.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Documents\TestLetterToPatient.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Documents\TestLetterToPatient.aspx" />
+  <event action="Analyze" type="Success" name="TestLetterToPatient.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Documents\TestLetterToPatient.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Documents\TestWorksheet.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Documents\TestWorksheet.aspx" />
+  <event action="Analyze" type="Success" name="TestWorksheet.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Documents\TestWorksheet.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Error.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Error.aspx" />
+  <event action="Analyze" type="Success" name="Error.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Error.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ForgotPassword.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ForgotPassword.aspx" />
+  <event action="Analyze" type="Success" name="ForgotPassword.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ForgotPassword.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Home.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Home.aspx" />
+  <event action="Analyze" type="Success" name="Home.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Home.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\InvoiceSearch.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\InvoiceSearch.aspx" />
+  <event action="Analyze" type="Success" name="InvoiceSearch.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\InvoiceSearch.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\InvoiceSearchByAttorney.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\InvoiceSearchByAttorney.aspx" />
+  <event action="Analyze" type="Success" name="InvoiceSearchByAttorney.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\InvoiceSearchByAttorney.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\LoanTerms.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\LoanTerms.aspx" />
+  <event action="Analyze" type="Success" name="LoanTerms.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\LoanTerms.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Login.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Login.aspx" />
+  <event action="Analyze" type="Success" name="Login.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Login.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManageAttorneys.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManageAttorneys.aspx" />
+  <event action="Analyze" type="Success" name="ManageAttorneys.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManageAttorneys.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManageCPTCodes.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManageCPTCodes.aspx" />
+  <event action="Analyze" type="Success" name="ManageCPTCodes.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManageCPTCodes.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManageFirms.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManageFirms.aspx" />
+  <event action="Analyze" type="Success" name="ManageFirms.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManageFirms.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManageICDCodes.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManageICDCodes.aspx" />
+  <event action="Analyze" type="Success" name="ManageICDCodes.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManageICDCodes.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManagePatients.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManagePatients.aspx" />
+  <event action="Analyze" type="Success" name="ManagePatients.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManagePatients.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManagePhysicians.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManagePhysicians.aspx" />
+  <event action="Analyze" type="Success" name="ManagePhysicians.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManagePhysicians.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManageProviders.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManageProviders.aspx" />
+  <event action="Analyze" type="Success" name="ManageProviders.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManageProviders.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManageSurgeries.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManageSurgeries.aspx" />
+  <event action="Analyze" type="Success" name="ManageSurgeries.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManageSurgeries.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManageTests.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManageTests.aspx" />
+  <event action="Analyze" type="Success" name="ManageTests.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManageTests.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManageUsers.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManageUsers.aspx" />
+  <event action="Analyze" type="Success" name="ManageUsers.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ManageUsers.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Master.Master" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Master.Master" />
+  <event action="Analyze" type="Success" name="Master.Master" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Master.Master" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\packages.config" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AccountsPayableReport.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AccountsPayableReport.aspx" />
+  <event action="Analyze" type="Success" name="AccountsPayableReport.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AccountsPayableReport.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AccountsReceivableReport.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AccountsReceivableReport.aspx" />
+  <event action="Analyze" type="Success" name="AccountsReceivableReport.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AccountsReceivableReport.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AttorneyCashReport.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AttorneyCashReport.aspx" />
+  <event action="Analyze" type="Success" name="AttorneyCashReport.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AttorneyCashReport.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AttorneyLettersReport.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AttorneyLettersReport.aspx" />
+  <event action="Analyze" type="Success" name="AttorneyLettersReport.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AttorneyLettersReport.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AttorneyListReports.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AttorneyListReports.aspx" />
+  <event action="Analyze" type="Success" name="AttorneyListReports.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AttorneyListReports.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AttorneyStatementsReports.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AttorneyStatementsReports.aspx" />
+  <event action="Analyze" type="Success" name="AttorneyStatementsReports.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AttorneyStatementsReports.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\ClientPayoffQuotationReport.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\ClientPayoffQuotationReport.aspx" />
+  <event action="Analyze" type="Success" name="ClientPayoffQuotationReport.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\ClientPayoffQuotationReport.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\CPTReport.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\CPTReport.aspx" />
+  <event action="Analyze" type="Success" name="CPTReport.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\CPTReport.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\DiscountReport.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\DiscountReport.aspx" />
+  <event action="Analyze" type="Success" name="DiscountReport.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\DiscountReport.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\ICDCodeReport.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\ICDCodeReport.aspx" />
+  <event action="Analyze" type="Success" name="ICDCodeReport.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\ICDCodeReport.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\PatientReport.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\PatientReport.aspx" />
+  <event action="Analyze" type="Success" name="PatientReport.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\PatientReport.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\PercentCash-LossCollected_ByDays.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\PercentCash-LossCollected_ByDays.aspx" />
+  <event action="Analyze" type="Success" name="PercentCash-LossCollected_ByDays.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\PercentCash-LossCollected_ByDays.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\ProviderInvoiceReport.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\ProviderInvoiceReport.aspx" />
+  <event action="Analyze" type="Success" name="ProviderInvoiceReport.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\ProviderInvoiceReport.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\ProviderPaymentsReport.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\ProviderPaymentsReport.aspx" />
+  <event action="Analyze" type="Success" name="ProviderPaymentsReport.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\ProviderPaymentsReport.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\TotalRevenueReport.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\TotalRevenueReport.aspx" />
+  <event action="Analyze" type="Success" name="TotalRevenueReport.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\TotalRevenueReport.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\TotalTestsAndSurgeriesByAttorney.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\TotalTestsAndSurgeriesByAttorney.aspx" />
+  <event action="Analyze" type="Success" name="TotalTestsAndSurgeriesByAttorney.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\TotalTestsAndSurgeriesByAttorney.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportsHome.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportsHome.aspx" />
+  <event action="Analyze" type="Success" name="ReportsHome.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportsHome.aspx" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ServiceTest.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ServiceTest.aspx" />
+  <event action="Analyze" type="Success" name="ServiceTest.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ServiceTest.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\TestStyles.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\TestStyles.aspx" />
+  <event action="Analyze" type="Success" name="TestStyles.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\TestStyles.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ThrowException.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ThrowException.aspx" />
+  <event action="Analyze" type="Success" name="ThrowException.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ThrowException.aspx" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Web.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Web.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Web.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Web.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Web.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Web.config" />
+  <event action="Analyze" type="Success" name="Web.config" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Web.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Web.Debug.config" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Web.Release.config" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\AttorneyInfoPopUp.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\AttorneyInfoPopUp.aspx" />
+  <event action="Analyze" type="Success" name="AttorneyInfoPopUp.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\AttorneyInfoPopUp.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ClientPayoffQuotationPopUp.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ClientPayoffQuotationPopUp.aspx" />
+  <event action="Analyze" type="Success" name="ClientPayoffQuotationPopUp.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ClientPayoffQuotationPopUp.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteAttorney.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteAttorney.aspx" />
+  <event action="Analyze" type="Success" name="ConfirmDeleteAttorney.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteAttorney.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteAttorneyTerm.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteAttorneyTerm.aspx" />
+  <event action="Analyze" type="Success" name="ConfirmDeleteAttorneyTerm.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteAttorneyTerm.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteContact.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteContact.aspx" />
+  <event action="Analyze" type="Success" name="ConfirmDeleteContact.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteContact.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteCPTCharge.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteCPTCharge.aspx" />
+  <event action="Analyze" type="Success" name="ConfirmDeleteCPTCharge.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteCPTCharge.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteCPTCode.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteCPTCode.aspx" />
+  <event action="Analyze" type="Success" name="ConfirmDeleteCPTCode.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteCPTCode.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteFirm.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteFirm.aspx" />
+  <event action="Analyze" type="Success" name="ConfirmDeleteFirm.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteFirm.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteICDCode.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteICDCode.aspx" />
+  <event action="Analyze" type="Success" name="ConfirmDeleteICDCode.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteICDCode.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteInvoice.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteInvoice.aspx" />
+  <event action="Analyze" type="Success" name="ConfirmDeleteInvoice.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteInvoice.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteInvoiceComment.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteInvoiceComment.aspx" />
+  <event action="Analyze" type="Success" name="ConfirmDeleteInvoiceComment.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteInvoiceComment.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteInvoicePayment.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteInvoicePayment.aspx" />
+  <event action="Analyze" type="Success" name="ConfirmDeleteInvoicePayment.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteInvoicePayment.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteInvoicePaymentComment.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteInvoicePaymentComment.aspx" />
+  <event action="Analyze" type="Success" name="ConfirmDeleteInvoicePaymentComment.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteInvoicePaymentComment.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeletePatient.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeletePatient.aspx" />
+  <event action="Analyze" type="Success" name="ConfirmDeletePatient.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeletePatient.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeletePhysician.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeletePhysician.aspx" />
+  <event action="Analyze" type="Success" name="ConfirmDeletePhysician.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeletePhysician.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteProcedure.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteProcedure.aspx" />
+  <event action="Analyze" type="Success" name="ConfirmDeleteProcedure.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteProcedure.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteProvider.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteProvider.aspx" />
+  <event action="Analyze" type="Success" name="ConfirmDeleteProvider.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteProvider.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteProviderPayment.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteProviderPayment.aspx" />
+  <event action="Analyze" type="Success" name="ConfirmDeleteProviderPayment.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteProviderPayment.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteProviderService.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteProviderService.aspx" />
+  <event action="Analyze" type="Success" name="ConfirmDeleteProviderService.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteProviderService.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteSICDCodes.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteSICDCodes.aspx" />
+  <event action="Analyze" type="Success" name="ConfirmDeleteSICDCodes.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteSICDCodes.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteSurgeryInvoiceProvider.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteSurgeryInvoiceProvider.aspx" />
+  <event action="Analyze" type="Success" name="ConfirmDeleteSurgeryInvoiceProvider.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteSurgeryInvoiceProvider.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteSurgeryInvoiceSurgery.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteSurgeryInvoiceSurgery.aspx" />
+  <event action="Analyze" type="Success" name="ConfirmDeleteSurgeryInvoiceSurgery.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteSurgeryInvoiceSurgery.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteTest.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteTest.aspx" />
+  <event action="Analyze" type="Success" name="ConfirmDeleteTest.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteTest.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteTestInvoiceTest.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteTestInvoiceTest.aspx" />
+  <event action="Analyze" type="Success" name="ConfirmDeleteTestInvoiceTest.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteTestInvoiceTest.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteUser.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteUser.aspx" />
+  <event action="Analyze" type="Success" name="ConfirmDeleteUser.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmDeleteUser.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmSaveInvoice.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmSaveInvoice.aspx" />
+  <event action="Analyze" type="Success" name="ConfirmSaveInvoice.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ConfirmSaveInvoice.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\EditInvoiceLoanTerms.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\EditInvoiceLoanTerms.aspx" />
+  <event action="Analyze" type="Success" name="EditInvoiceLoanTerms.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\EditInvoiceLoanTerms.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\FirmInfoPopUp.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\FirmInfoPopUp.aspx" />
+  <event action="Analyze" type="Success" name="FirmInfoPopUp.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\FirmInfoPopUp.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\InvoiceSaved.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\InvoiceSaved.aspx" />
+  <event action="Analyze" type="Success" name="InvoiceSaved.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\InvoiceSaved.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\PhysicianInfoPopUp.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\PhysicianInfoPopUp.aspx" />
+  <event action="Analyze" type="Success" name="PhysicianInfoPopUp.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\PhysicianInfoPopUp.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ProviderInfoPopUp.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ProviderInfoPopUp.aspx" />
+  <event action="Analyze" type="Success" name="ProviderInfoPopUp.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ProviderInfoPopUp.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\TestWindow.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\TestWindow.aspx" />
+  <event action="Analyze" type="Success" name="TestWindow.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\TestWindow.aspx" />
+  <event action="Analyze" type="Success" name="BMM" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\BMM.csproj" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM_DAL\BMM_DAL.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM_DAL\app.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM_DAL\app.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM_DAL\app.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM_DAL\app.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM_DAL\app.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM_DAL\app.config" />
+  <event action="Analyze" type="Success" name="app.config" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM_DAL\app.config" />
+  <event action="Analyze" type="Success" name="BMM_DAL" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM_DAL\BMM_DAL.csproj" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM_BAL\BMM_BAL.csproj" />
+  <event action="Analyze" type="Success" name="BMM_BAL" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM_BAL\BMM_BAL.csproj" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\BMM_Reports.csproj" />
+  <event action="Analyze" type="Success" name="AccountsPayable.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\AccountsPayable.resx" />
+  <event action="Analyze" type="Success" name="AccountsReceivables_BMM.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\AccountsReceivables_BMM.resx" />
+  <event action="Analyze" type="Success" name="AccountsReceivables_DMA.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\AccountsReceivables_DMA.resx" />
+  <event action="Analyze" type="Success" name="AccountsReceivablesAging.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\AccountsReceivablesAging.resx" />
+  <event action="Analyze" type="Success" name="AccountsReceivablesAgingHistory.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\AccountsReceivablesAgingHistory.resx" />
+  <event action="Analyze" type="Success" name="AccountsReceivablesHistory.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\AccountsReceivablesHistory.resx" />
+  <event action="Analyze" type="Success" name="AllTestsAndProceduresForAttorneys.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\AllTestsAndProceduresForAttorneys.resx" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\app.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\app.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\app.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\app.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\app.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\app.config" />
+  <event action="Analyze" type="Success" name="app.config" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\app.config" />
+  <event action="Analyze" type="Success" name="AttorneyLetterAllInvoice.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\AttorneyLetterAllInvoice.resx" />
+  <event action="Analyze" type="Success" name="AttorneyListReport.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\AttorneyListReport.resx" />
+  <event action="Analyze" type="Success" name="AttorneyStatementAllInvoices.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\AttorneyStatementAllInvoices.resx" />
+  <event action="Analyze" type="Success" name="AttorneyStatementAllInvoicesTest.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\AttorneyStatementAllInvoicesTest.resx" />
+  <event action="Analyze" type="Success" name="AttorneyStatementPastInvoices.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\AttorneyStatementPastInvoices.resx" />
+  <event action="Analyze" type="Success" name="CashReport.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\CashReport.resx" />
+  <event action="Analyze" type="Success" name="CashReportAttorneyView.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\CashReportAttorneyView.resx" />
+  <event action="Analyze" type="Success" name="ClientPayoffQuotation.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\ClientPayoffQuotation.resx" />
+  <event action="Analyze" type="Success" name="CPTReport.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\CPTReport.resx" />
+  <event action="Analyze" type="Success" name="DiscountReport.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\DiscountReport.resx" />
+  <event action="Analyze" type="Success" name="ICDReport.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\ICDReport.resx" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\packages.config" />
+  <event action="Analyze" type="Success" name="Patient.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\Patient.resx" />
+  <event action="Analyze" type="Success" name="PercentCash-LossCollected_ByDays.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\PercentCash-LossCollected_ByDays.resx" />
+  <event action="Analyze" type="Success" name="ProviderInvoice.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\ProviderInvoice.resx" />
+  <event action="Analyze" type="Success" name="ProviderPayments.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\ProviderPayments.resx" />
+  <event action="Analyze" type="Success" name="TotalRevenue.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\TotalRevenue.resx" />
+  <event action="Analyze" type="Success" name="BMM_Reports" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\BMM_Reports.csproj" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\InfiniedgeLibrary\InfiniedgeLibrary.ExceptionHandling\InfiniedgeLibrary.ExceptionHandling.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\InfiniedgeLibrary\InfiniedgeLibrary.ExceptionHandling\app.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\InfiniedgeLibrary\InfiniedgeLibrary.ExceptionHandling\app.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\InfiniedgeLibrary\InfiniedgeLibrary.ExceptionHandling\app.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\InfiniedgeLibrary\InfiniedgeLibrary.ExceptionHandling\app.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\InfiniedgeLibrary\InfiniedgeLibrary.ExceptionHandling\app.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\InfiniedgeLibrary\InfiniedgeLibrary.ExceptionHandling\app.config" />
+  <event action="Analyze" type="Success" name="app.config" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\InfiniedgeLibrary\InfiniedgeLibrary.ExceptionHandling\app.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\InfiniedgeLibrary\InfiniedgeLibrary.ExceptionHandling\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\InfiniedgeLibrary\InfiniedgeLibrary.ExceptionHandling\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\InfiniedgeLibrary\InfiniedgeLibrary.ExceptionHandling\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\InfiniedgeLibrary\InfiniedgeLibrary.ExceptionHandling\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\InfiniedgeLibrary\InfiniedgeLibrary.ExceptionHandling\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\InfiniedgeLibrary\InfiniedgeLibrary.ExceptionHandling\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\InfiniedgeLibrary\InfiniedgeLibrary.ExceptionHandling\packages.config" />
+  <event action="Analyze" type="Success" name="InfiniedgeLibrary.ExceptionHandling" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\InfiniedgeLibrary\InfiniedgeLibrary.ExceptionHandling\InfiniedgeLibrary.ExceptionHandling.csproj" />
+  <event action="Analyze" type="Success" name="BMM" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.sln" />
+  <event action="Backup" type="Success" name="BMM" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\BMM.csproj" />
+  <event action="Backup" type="Success" name="BMM_Reports" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\BMM_Reports.csproj" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\BMM.csproj" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AccountsPayableReport.aspx" />
+  <event action="Upgrade" type="Success" name="AccountsPayableReport.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AccountsPayableReport.aspx" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AccountsReceivableReport.aspx" />
+  <event action="Upgrade" type="Success" name="AccountsReceivableReport.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AccountsReceivableReport.aspx" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AttorneyCashReport.aspx" />
+  <event action="Upgrade" type="Success" name="AttorneyCashReport.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AttorneyCashReport.aspx" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AttorneyLettersReport.aspx" />
+  <event action="Upgrade" type="Success" name="AttorneyLettersReport.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AttorneyLettersReport.aspx" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AttorneyListReports.aspx" />
+  <event action="Upgrade" type="Success" name="AttorneyListReports.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AttorneyListReports.aspx" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AttorneyStatementsReports.aspx" />
+  <event action="Upgrade" type="Success" name="AttorneyStatementsReports.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\AttorneyStatementsReports.aspx" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\ClientPayoffQuotationReport.aspx" />
+  <event action="Upgrade" type="Success" name="ClientPayoffQuotationReport.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\ClientPayoffQuotationReport.aspx" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\CPTReport.aspx" />
+  <event action="Upgrade" type="Success" name="CPTReport.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\CPTReport.aspx" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\DiscountReport.aspx" />
+  <event action="Upgrade" type="Success" name="DiscountReport.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\DiscountReport.aspx" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\ICDCodeReport.aspx" />
+  <event action="Upgrade" type="Success" name="ICDCodeReport.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\ICDCodeReport.aspx" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\PatientReport.aspx" />
+  <event action="Upgrade" type="Success" name="PatientReport.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\PatientReport.aspx" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\PercentCash-LossCollected_ByDays.aspx" />
+  <event action="Upgrade" type="Success" name="PercentCash-LossCollected_ByDays.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\PercentCash-LossCollected_ByDays.aspx" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\ProviderInvoiceReport.aspx" />
+  <event action="Upgrade" type="Success" name="ProviderInvoiceReport.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\ProviderInvoiceReport.aspx" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\ProviderPaymentsReport.aspx" />
+  <event action="Upgrade" type="Success" name="ProviderPaymentsReport.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\ProviderPaymentsReport.aspx" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\TotalRevenueReport.aspx" />
+  <event action="Upgrade" type="Success" name="TotalRevenueReport.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\TotalRevenueReport.aspx" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\TotalTestsAndSurgeriesByAttorney.aspx" />
+  <event action="Upgrade" type="Success" name="TotalTestsAndSurgeriesByAttorney.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\ReportPages\TotalTestsAndSurgeriesByAttorney.aspx" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Web.config" />
+  <event action="Upgrade" type="Success" name="Http Handlers" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Web.config" />
+  <event action="Upgrade" type="Success" name="Handlers (IIS7+)" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Web.config" />
+  <event action="Upgrade" type="Success" name="Web.config" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Web.config" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ClientPayoffQuotationPopUp.aspx" />
+  <event action="Upgrade" type="Success" name="ClientPayoffQuotationPopUp.aspx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\Windows\ClientPayoffQuotationPopUp.aspx" />
+  <event action="Upgrade" type="Success" name="BMM" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM\BMM.csproj" />
+  <event>Installed NuGet package: Telerik.Reporting 17.2.23.1114</event>
+  <event action="Upgrade" type="Success" name="Assembly References" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\BMM_Reports.csproj" />
+  <event action="Upgrade" type="Success" name="AccountsPayable.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\AccountsPayable.resx" />
+  <event action="Upgrade" type="Success" name="AllTestsAndProceduresForAttorneys.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\AllTestsAndProceduresForAttorneys.resx" />
+  <event action="Upgrade" type="Success" name="AttorneyLetterAllInvoice.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\AttorneyLetterAllInvoice.resx" />
+  <event action="Upgrade" type="Success" name="AttorneyListReport.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\AttorneyListReport.resx" />
+  <event action="Upgrade" type="Success" name="AttorneyStatementAllInvoices.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\AttorneyStatementAllInvoices.resx" />
+  <event action="Upgrade" type="Success" name="AttorneyStatementAllInvoicesTest.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\AttorneyStatementAllInvoicesTest.resx" />
+  <event action="Upgrade" type="Success" name="CashReport.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\CashReport.resx" />
+  <event action="Upgrade" type="Success" name="CashReportAttorneyView.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\CashReportAttorneyView.resx" />
+  <event action="Upgrade" type="Success" name="CPTReport.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\CPTReport.resx" />
+  <event action="Upgrade" type="Success" name="ICDReport.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\ICDReport.resx" />
+  <event action="Upgrade" type="Success" name="Patient.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\Patient.resx" />
+  <event action="Upgrade" type="Success" name="PercentCash-LossCollected_ByDays.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\PercentCash-LossCollected_ByDays.resx" />
+  <event action="Upgrade" type="Success" name="ProviderInvoice.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\ProviderInvoice.resx" />
+  <event action="Upgrade" type="Success" name="ProviderPayments.resx" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\ProviderPayments.resx" />
+  <event action="Upgrade" type="Success" name="BMM_Reports" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.Reports\BMM_Reports.csproj" />
+  <event action="Upgrade" type="Success" name="BMM" path="C:\GenInf\tfs2017\WebDev\DMA\Dev-GG\BMM.sln" />
+</log>

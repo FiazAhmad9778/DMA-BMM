@@ -1,0 +1,404 @@
+﻿/* RadFormDecorator BMM Skin */
+
+/* CSS class for styling the decoration zone or the <html /> tag of the page */
+.RadForm_BMM.rfdZone
+{
+    
+}
+
+/* Decorate scrollbars */
+.RadForm_BMM.rfdScrollBars
+{
+	scrollbar-3dlight-color: #ccc; 
+	scrollbar-arrow-color: #292929;
+	scrollbar-base-color: #ff6347; 
+	scrollbar-darkshadow-color: #595959; 
+	scrollbar-face-color: #e4e4e4;
+	scrollbar-highlight-color: #fff; 
+	scrollbar-shadow-color: #a3a3a3;
+	scrollbar-track-color: #f0f0f0;
+}
+
+/* Decorate <input type="button | submit | reset" /> and <button type="button | submit | reset" /> - look if there is a secondary .rfdButton class applied to the root element */
+.RadForm_BMM.rfdButton a.rfdSkinnedButton,
+.RadForm_BMM.rfdButton input[type="button"].rfdDecorated,
+.RadForm_BMM.rfdButton input[type="reset"].rfdDecorated,
+.RadForm_BMM.rfdButton input[type="submit"].rfdDecorated,
+.RadForm_BMM.rfdButton .rfdSkinnedButton button,
+.RadForm_BMM.rfdButton a.rfdInputDisabled.rfdSkinnedButton:hover,
+.RadForm_BMM.rfdButton a.rfdSkinnedButton.rfdInputDisabled:hover *
+{
+	background-image: url('/Images/BMM/Sprites/ButtonSprites_BMM.gif');
+	color: #fefefe;
+	font-family: Arial;
+	font-weight: bold !important;
+	height: 33px;
+	padding-right: 7px;
+    cursor: pointer;
+}
+
+.RadForm_BMM.rfdButton input[type="button"].rfdDecorated,
+.RadForm_BMM.rfdButton input[type="reset"].rfdDecorated,
+.RadForm_BMM.rfdButton input[type="submit"].rfdDecorated,
+.RadForm_BMM.rfdButton a.rfdSkinnedButton.rfdInputDisabled:hover *,
+.RadForm_BMM.rfdButton a.rfdSkinnedButton.rfdInputDisabled:active *
+{
+    background-position: left -33px;
+    padding-right: 2px;
+}
+
+.RadForm_BMM.rfdButton a.rfdSkinnedButton,
+.RadForm_BMM.rfdButton a.rfdSkinnedButton:hover,
+.RadForm_BMM.rfdButton a.rfdInputDisabled.rfdSkinnedButton:hover
+{
+    background-position: right 0px;
+}
+
+*html .RadForm_BMM.rfdButton a.rfdSkinnedButton
+{
+    background-position: right 0px;
+}
+
+*html .RadForm_BMM a.rfdSkinnedButton,
+*html .RadForm_BMM .rfdSkinnedButton button,
+*html .RadForm_BMM .rfdSkinnedButton input.rfdDecorated,
+.RadForm_BMM.rfdButton a.rfdSkinnedButton,
+.RadForm_BMM.rfdButton a.rfdSkinnedButton *
+{
+	background-image: url('/Images/BMM/Sprites/ButtonSprites_BMM.gif');
+	color: #fefefe;
+	height: 33px;
+}
+
+/* OPERA width fix - do not remove (and check if it is still necessary) */
+@media screen and (min-width:1px)  
+{
+	/* 
+       the hack below fixes a strange behavior under Opera - 
+       input and button have a different CSS display when in anchor tag 
+    */
+	.RadForm_BMM.rfdButton a.rfdSkinnedButton input
+	{
+	    display: block;
+	    float: left;
+	}
+}
+
+/* Decorate <h4|5|6 /> */
+.RadForm_BMM.rfdHeading h4
+{
+	color: #000;	
+	border-bottom: solid 1px #a0a0a0;	
+}
+
+.RadForm_BMM.rfdHeading h5
+{
+	color: #000;	
+	border-bottom: solid 1px #a0a0a0;	
+}
+
+.RadForm_BMM.rfdHeading h6
+{
+	color: #000;	
+}
+
+/* Decorate <label /> */
+.RadForm_BMM.rfdLabel label
+{	
+	color: #000;
+}
+
+/* Decorate <input type="checkbox" /> */
+.RadForm_BMM .rfdCheckboxUnchecked,
+.RadForm_BMM .rfdCheckboxChecked,
+.RadForm_BMM .rfdInputDisabled.rfdCheckboxUnchecked,
+.RadForm_BMM .rfdInputDisabled.rfdCheckboxChecked
+{
+	background-image: url('/Images/BMM/Sprites/CheckBoxSprites_BMM.gif');
+	font-family: Arial !important;
+    font-size: 14px !important;  
+    color: #404040 !important;
+    font-weight: normal !important; 
+    vertical-align: middle !important;
+}
+
+/* Decorate <input type="radio" /> */
+.RadForm_BMM .rfdRadioUnchecked,
+.RadForm_BMM .rfdRadioChecked,
+.RadForm_BMM .rfdInputDisabled.rfdRadioUnchecked,
+.RadForm_BMM .rfdInputDisabled.rfdRadioChecked
+{
+	background-image: url('/Images/BMM/Sprites/RadioButtonSprites_BMM.gif');
+	font-family: Arial !important;
+    font-size: 14px !important;  
+    color: #404040 !important;
+    font-weight: normal !important; 
+    vertical-align: middle;
+}
+
+/* IE6 - we set .gif")%> image instead of .png")%> due to the lack RGBA support */
+.RadForm_BMM .rfdRadioUnchecked,
+.RadForm_BMM .rfdInputDisabled.rfdRadioUnchecked:hover,
+.RadForm_BMM .rfdRadioUnchecked:hover,
+.RadForm_BMM .rfdRadioChecked,
+.RadForm_BMM .rfdInputDisabled.rfdRadioChecked:hover,
+.RadForm_BMM .rfdRadioChecked:hover
+{
+    _background-image: url('/Images/BMM/Sprites/RadioButtonSprites_BMM.gif'); /* IE6 hack */
+}
+
+/* <fieldset /> and <legend /> */
+
+.RadForm_BMM.rfdFieldset table.rfdRoundedWrapper_fieldset legend,
+.RadForm_BMM fieldset.rfdFieldset legend,
+.RadForm_BMM.rfdFieldset fieldset legend
+{
+	color: #000;
+}
+
+.RadForm_BMM table.rfdRoundedWrapper:hover div.rfdRoundedInner
+{
+    background-color: #fff;
+    border-color: #515151 !important;
+}
+
+/* this selector styles the hover of the side bars of the rounded elements */
+.RadForm_BMM table.rfdRoundedWrapper:hover .rfdRoundedOuter
+{	
+	background-color: #515151 !important;
+}
+
+/* Decorate <input type="text | password" /> and <textarea /> */
+/* For all browsers except IE6 we are using attribute selectors - single or double */
+.RadForm_BMM.rfdTextbox input[type="text"],
+.RadForm_BMM.rfdTextbox input[type="password"],
+.RadForm_BMM.rfdTextarea textarea,
+.RadForm_BMM.rfdTextarea textarea[disabled]:hover,
+.RadForm_BMM.rfdTextbox input[disabled][type="text"]:hover,
+.RadForm_BMM.rfdTextbox input[disabled][type="password"]:hover
+{
+    border: solid 1px #8e8e8e;
+    background-color: #fff;
+}
+
+.RadForm_BMM.rfdTextbox .rfdDecorated:hover,
+.RadForm_BMM.rfdTextarea textarea:hover,
+.RadForm_BMM.rfdTextbox .rfdDecorated:focus,
+.RadForm_BMM.rfdTextarea textarea:focus
+{
+    border: solid 1px #515151;
+}
+
+/* Decorate <fieldset /> and <legend /> */
+.RadForm_BMM.rfdFieldset table.rfdRoundedWrapper_fieldset legend,
+.RadForm_BMM.rfdFieldset fieldset.rfdFieldset legend
+{
+	color: #000;
+}
+
+.RadForm_BMM.rfdFieldset table.rfdRoundedWrapper_fieldset fieldset,
+.RadForm_BMM.rfdFieldset fieldset.rfdFieldset
+{	
+	border: solid 1px #828282;
+	background-image: url('FormDecorator/FieldsetBgr.png'); /* having a background image on a fieldset is not okay with IE */	
+}
+
+/* Because of a glitch in IE the following 2 CSS classes must be declared separately for correct parsing of the textarea class in IE6*/
+.RadForm_BMM table.rfdRoundedWrapper input,
+.RadForm_BMM table.rfdRoundedWrapper textarea,
+.RadForm_BMM input.rfdInput, 
+.RadForm_BMM textarea.rfdTextarea
+{
+	border: solid 1px #8e8e8e;
+	background: #ffffff;	
+	color: #000;
+}
+
+.RadForm_BMM textarea.rfdTextarea,
+.RadForm_BMM table.rfdRoundedWrapper textarea
+{
+    overflow: auto;
+}
+
+/* <select /> */
+.rfdSelect_BMM,
+.rfdSelect_BMM:hover,
+.rfdSelect_BMM .rfdSelectOuter,
+.rfdSelect_BMM:hover .rfdSelectOuter,
+.rfdSelect_BMM .rfdSelectArrow span,
+.rfdSelectBox_BMM .rfdSelect_selected,
+.rfdSelectBox_BMM li:hover,
+.rfdSelect_BMM.rfdSelectDisabled:hover,
+.rfdRtl .rfdSelect_BMM,
+.rfdRtl .rfdSelect_BMM:hover,
+.rfdRtl .rfdSelect_BMM .rfdSelectOuter,
+.rfdRtl .rfdSelect_BMM .rfdSelectOuter:hover
+{
+    background-image: url('FormDecorator/ComboSprites.gif');
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.rfdSelect_BMM .rfdSelectOuter,
+.rfdSelect_BMM.rfdSelectDisabled:hover .rfdSelectOuter
+{
+    color: #000;
+}
+
+/* dropdown settings */
+.rfdSelectBox_BMM
+{
+    background: #fff;
+    border: solid 1px #828282;
+    color: #000;
+}
+
+.rfdSelectBox_BMM li
+{
+    padding: 0 0 0 3px;
+    background-image: none !important;
+}
+
+.rfdSelectBox_BMM .rfdSelect_selected,
+.rfdSelectBox_BMM li:hover
+{
+    color: #000;
+    background-color: #dfdfdf;
+}
+
+.rfdSelectBox_BMM .rfdSelectBox_optgroup_label:hover
+{
+    background: none;
+    color: #000;
+}
+
+/* IE6 disabled state fix - this should not be added to the base stylesheet, but at the bottom of the skin file */
+* html .RadForm_BMM.rfdButton a.rfdInputDisabled:hover
+{
+	_background-position: 0 0;
+}
+
+* html .RadForm_BMM.rfdButton a.rfdInputDisabled:hover *
+{
+	_background-position: right -21px;
+	_color: #824703;
+}
+
+.RadForm_BMM.rfdTextbox input.rfdIE6TextBox,
+.RadForm_BMM.rfdTextbox textarea.rfdIE6TextBox
+{
+    _border: solid 1px #938879;
+    _background-color: #fff;
+}
+
+/* the styling of radiobuttons and checkboxes in Safari and Chrome is already fully achieved with CSS */
+@media screen and (-webkit-min-device-pixel-ratio: 0)
+{
+    /* checkboxes */
+    .rfdCheckbox input[type="checkbox"],
+    .rfdCheckbox input[type="checkbox"][disabled]:hover
+    {
+        background-image: url('/Images/BMM/Sprites/CheckBoxSprites_BMM.gif');
+        font-family: Arial !important;
+        font-size: 14px !important;  
+        color: #404040 !important;
+        font-weight: normal !important; 
+    }
+     
+    /* radio buttons */
+    .rfdRadio input[type="radio"],
+    .rfdRadio input[type="radio"][disabled="disabled"]:hover
+    {
+        background-image: url('/Images/BMM/Sprites/RadioButtonSprites_BMM.gif');
+        font-family: Arial !important;
+        font-size: 14px !important;  
+        color: #404040 !important;
+        font-weight: normal !important; 
+    }
+}
+
+/* ----------------------------------------------- Skin-specific Scrollbar Settings for WebKit ----------------------------------------------- */
+
+/* the scrollbar face color */
+.RadForm.rfdScrollBars.RadForm_BMM body::-webkit-scrollbar,
+.RadForm.rfdScrollBars.RadForm_BMM body::-webkit-scrollbar-thumb:vertical,
+.RadForm.rfdScrollBars.RadForm_BMM body::-webkit-scrollbar-thumb:horizontal,
+.RadForm.rfdScrollBars.RadForm_BMM div::-webkit-scrollbar,
+.RadForm.rfdScrollBars.RadForm_BMM div::-webkit-scrollbar-thumb:vertical,
+.RadForm.rfdScrollBars.RadForm_BMM div::-webkit-scrollbar-thumb:horizontal
+.RadForm.rfdScrollBars.RadForm_BMM form::-webkit-scrollbar,
+.RadForm.rfdScrollBars.RadForm_BMM form::-webkit-scrollbar-thumb:vertical,
+.RadForm.rfdScrollBars.RadForm_BMM form::-webkit-scrollbar-thumb:horizontal
+{
+    background-color: #e4e4e4;
+}
+
+/* scrollbar track background color */
+.RadForm.rfdScrollBars.RadForm_BMM ::-webkit-scrollbar-track-piece,
+.RadForm.rfdScrollBars.RadForm_BMM ::-webkit-scrollbar-corner
+{
+    background-color: #f0f0f0;
+}
+
+.RadForm.rfdScrollBars.RadForm_BMM ::-webkit-scrollbar-button:vertical:decrement, 
+.RadForm.rfdScrollBars.RadForm_BMM ::-webkit-scrollbar-button:vertical:increment, 
+.RadForm.rfdScrollBars.RadForm_BMM ::-webkit-scrollbar-button:horizontal:decrement, 
+.RadForm.rfdScrollBars.RadForm_BMM ::-webkit-scrollbar-button:horizontal:increment, 
+.RadForm.rfdScrollBars.RadForm_BMM ::-webkit-scrollbar-thumb:vertical, 
+.RadForm.rfdScrollBars.RadForm_BMM ::-webkit-scrollbar-thumb:horizontal
+{
+    border-color: #ccc #a3a3a3 #a3a3a3 #ccc;
+}
+
+/* increment / decrement button settings */
+.RadForm.rfdScrollBars.RadForm_BMM ::-webkit-scrollbar-button:vertical:decrement, 
+.RadForm.rfdScrollBars.RadForm_BMM ::-webkit-scrollbar-button:vertical:increment, 
+.RadForm.rfdScrollBars.RadForm_BMM ::-webkit-scrollbar-button:horizontal:decrement, 
+.RadForm.rfdScrollBars.RadForm_BMM ::-webkit-scrollbar-button:horizontal:increment
+{
+    background-image: url('/Images/BMM/Sprites/ButtonSprites_BMM.gif');
+    background-color: #e4e4e4;
+}
+
+/*GridView, FormView, DetailsView*/
+.RadForm_BMM.rfdGrids .rfdTable
+{
+    border:1px solid #828282;
+    background:#fff;
+    color:#333;
+    font:12px "segoe ui",arial,sans-serif;
+}
+
+.RadForm_BMM.rfdGrids .rfdTable th
+{
+    border-bottom:1px solid #828282;
+    border-left:1px solid #828282;
+    background:#eaeaea;
+    color:#333;
+}
+
+.RadForm_BMM.rfdGrids .rfdTable a
+{
+    color:#000;
+}
+
+/* Validation Summary Control and Login Control  */
+
+.RadForm_BMM .rfdValidationSummaryControl,
+.RadForm_BMM .rfdLoginControl
+{
+	background-color: #fff;
+	border: 1px solid #848484;
+}
+
+.RadForm_BMM a.rfdLoginControl,
+.RadForm_BMM a.rfdLoginControl:active,
+.RadForm_BMM a.rfdLoginControl:visited
+{
+	color: #000;
+}
+
+.RadForm_BMM a.rfdLoginControl:hover
+{
+	color: #4b4b4b;
+}

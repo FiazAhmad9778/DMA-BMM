@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!---->
+<MigrationScript version="2" type="MigrationScript">
+  <Name>Database 6222 to 7115</Name>
+  <FromVersion version="1" type="VersionInfoRaw">
+    <Version>6222</Version>
+    <ScriptFolderLocation>&lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+&lt;!----&gt;
+&lt;ISOCCompareLocation version="1" type="TfsLocation"&gt;
+  &lt;ServerUrl&gt;http://tfs2012:8080/tfs&lt;/ServerUrl&gt;
+  &lt;SourceControlFolder&gt;$/Bayou Medical Management/Main/BMM.DB/Database&lt;/SourceControlFolder&gt;
+&lt;/ISOCCompareLocation&gt;</ScriptFolderLocation>
+  </FromVersion>
+  <ToVersion version="1" type="VersionInfoRaw">
+    <Version>7115</Version>
+    <ScriptFolderLocation>&lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+&lt;!----&gt;
+&lt;ISOCCompareLocation version="1" type="TfsLocation"&gt;
+  &lt;ServerUrl&gt;http://tfs2012:8080/tfs&lt;/ServerUrl&gt;
+  &lt;SourceControlFolder&gt;$/Bayou Medical Management/Main/BMM.DB/Database&lt;/SourceControlFolder&gt;
+&lt;/ISOCCompareLocation&gt;</ScriptFolderLocation>
+  </ToVersion>
+  <ObjectIdentifiers type="ObjectIdentifiers" version="2">
+    <value version="1" type="ObjectIdentifier">
+      <FullyQualifiedName>[dbo].[procAccountsReceivableReport]</FullyQualifiedName>
+      <Type>StoredProcedure</Type>
+    </value>
+  </ObjectIdentifiers>
+  <Description>ToProd</Description>
+</MigrationScript>

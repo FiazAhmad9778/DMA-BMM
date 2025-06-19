@@ -1,0 +1,369 @@
+﻿.Logo 
+{
+    display: block;
+    position: absolute;
+    top: 12px; left: 15px;
+    width: 255px; height: 110px;
+}
+
+.Hidden 
+{
+    display: none !important;
+}
+
+*
+{
+    font-family: Arial;
+    color: #404040;
+    font-size: 12px;
+}
+
+html, body, form 
+{
+    min-height: 100%;
+    min-width: 1024px;
+    margin: 0;
+}
+
+h1
+{
+    font-family: Book Antiqua;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+h2
+{
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.hr
+{
+    background: url(/Images/hr.png) repeat-x center center;
+    height: 2px;
+    margin: 10px 0;
+    clear: both;
+}
+.hr hr 
+{
+    display: none;
+}
+
+body
+{
+    background-color: #f3f1e9;
+}
+
+#HeaderWrapper
+{
+    width: 100%;
+    min-width: 1024px;
+    height: 170px;
+    background-repeat: repeat-x;
+}
+
+#Header {
+    height: 81px;
+    margin: 0 auto;
+    border: 0;
+    padding: 89px 20px 0px 0px;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+#Header > a
+{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.Navigation 
+{
+    list-style-type: none;   
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    position: relative;
+}
+.Navigation > li 
+{
+    display: inline;
+}
+.Navigation > li + li
+{
+    margin-left: 10px;
+}
+.Navigation > li span.Tab > span.Name
+{
+    font: Bold 18px/40px Arial;
+    text-decoration: none;
+    color: #f3f1e9;
+}
+.Navigation > li > a > span.Tab,
+.Navigation > li > a > span.Tab *
+{
+    cursor: pointer;
+}
+.Navigation > li > span.Tab,
+.Navigation > li > span.Tab *
+{
+    cursor: default
+}
+.Navigation > li span.Tab
+{
+    height: 40px;
+}
+.Navigation > li span.Tab > img
+{
+    border: 0;
+    height: 40px;
+    vertical-align: bottom
+}
+.Navigation > li span.Tab > span.Name
+{
+    display: inline-block;
+    background-repeat: repeat-x;
+    zoom: 1;
+    *display: inline;
+    height: 40px;
+}
+.Navigation > li span.Tab > img.LeftCap,
+.Navigation > li span.Tab > img.RightCap
+{
+    height: 40px;
+    width: 6px;
+}
+.SubNavigation 
+{
+    list-style-type: none;   
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    position: relative;
+    display: none;
+}
+.SubNavigation.Active
+{
+    float: right;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    height: 41px;
+}
+.SubNavigation > li
+{
+    font: Bold 14px/41px Arial;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    height: 41px;
+    cursor: default;
+}
+.SubNavigation > li.Disabled 
+{
+    padding: 0 10px;
+}
+.SubNavigation > li + li
+{
+    /*margin-left: 10px;*/
+}
+.SubNavigation > li.Active
+{
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+.SubNavigation > li > a
+{
+    font: inherit;
+    text-decoration: none;
+    color: #f3f1e9;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    height: 41px;
+    padding: 0 10px;
+}
+
+
+#Content {
+    padding: 20px;
+    margin:0 auto;
+}
+
+.RadInput > input,
+.RadInput > textarea,
+.TextBox,
+.Textbox
+{
+	border:solid 1px #404040 !important;
+	vertical-align: middle;
+	font-family: Arial;
+	overflow:hidden;
+	background-color: #ffffff;
+	font-size:12px;
+	font-weight:normal;
+	padding-top:3px;
+	color: #000;
+}
+
+.RadForm label
+{
+    font-family: Arial !important;
+    font-size: 14px;
+    color: #404040;
+    font-weight: normal;
+}
+
+.rscLinkImg
+{
+    height: 28px;
+    width: 82px;
+    text-decoration:none; 
+    text-indent:-9999px; 
+    overflow:hidden;
+    display: block;
+}
+
+.rfdSkinnedButton input
+{
+    cursor: pointer !important;
+}
+
+/*** Forgot Password ***/
+#ForgotPassword > h1
+{
+    padding-bottom: 15px;   
+}
+
+
+/*** form table ***/
+.ErrorText
+{
+    font-size: 14px;
+    font-weight: normal;
+    color: #ed1c24;
+}
+
+
+
+table.Form
+{  
+}
+table.Form > tbody > tr > th
+{
+}
+table.Form > tbody > tr > td 
+{
+    padding-left: 5px;
+}
+table.Form > tbody > tr + tr > th,
+table.Form > tbody > tr + tr > td
+{
+    padding-top: 5px;
+}
+table.Form > tbody > tr > th > label
+{
+    display: block;
+    text-align: right;
+    white-space: nowrap;
+    font-weight: bold;
+}
+table.Form .Textbox,
+table.Form .RadComboBox,
+table.Form .RadPicker
+{
+    width: 250px !important;  
+    resize: none; 
+}
+
+table.Form > tbody > tr > td > textarea 
+{
+    height: 100px;
+    overflow: auto;
+}
+
+table.Form .rcCalPopup
+{
+    margin-right: 0 !important;
+}
+table.Form > tbody > tr > td.Buttons
+{
+    text-align: right;
+}
+
+div.RadGrid .rgPager .rgAdvPart,
+.rgPageNext,
+.rgPageLast,
+.rgPagePrev,
+.rgPageFirst
+{     
+    display:none !important;        
+}  
+ 
+ 
+
+.rwCorner .rwBodyRight
+{
+    display: none;
+    visibility: hidden;   
+}
+
+.rwTopLeft,
+.rwTopRight,
+.rwTitlebar,
+.rwFooterLeft,
+.rwFooterRight,
+.rwFooterCenter,
+.rwTopResize,
+.rwStatusbar div,
+.rwStatusbar,
+.rwBodyLeft,
+.rwBodyRight,
+.rwStatusbarRow .rwCorner
+{
+    display: none !important;
+    visibility: hidden !important;   
+}
+
+
+.PermissionNeeded 
+{
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+img.View,
+img.Edit,
+img.Delete
+{
+    border: none;
+}
+img.View,
+img.Edit,
+.Edit,
+.View
+{
+    margin-right: 15px;
+}
+
+
+.RadComboBox .rcbArrowCell a {
+    width: 16px !important;
+}
+
+.Numeric {
+    text-align: right;
+}
+
+
+.homeScreen {
+    display: grid;
+    justify-content: center;
+}

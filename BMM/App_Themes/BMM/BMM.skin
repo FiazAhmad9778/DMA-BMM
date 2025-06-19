@@ -1,0 +1,13 @@
+﻿
+<asp:Image SkinID="imgCloseButton" runat="server" ImageUrl="/Images/BMM/Modals/btn_close.png" />
+<asp:Image SkinID="imgLogoutBtn" runat="server" ImageUrl="/Images/BMM/btn_logout.png" />
+<asp:Image SkinID="imgFlag" runat="server" ImageUrl="/Images/BMM/icon_flag.png" />
+<asp:Image SkinID="imgView" runat="server" ImageUrl="/Images/BMM/icon_view.png" ToolTip="View" CssClass="View" />
+<asp:Image SkinID="imgView_Inactive" runat="server" ImageUrl="/Images/BMM/icon_inactive_view.png" CssClass="View" />
+<asp:Image SkinID="imgEdit" runat="server" ImageUrl="/Images/BMM/icon_edit.png" ToolTip="Edit" CssClass="Edit" />
+<asp:Image SkinID="imgEdit_Inactive" runat="server" ImageUrl="/Images/BMM/icon_inactive_edit.png" CssClass="Edit" />
+<asp:Image SkinID="imgDelete" runat="server" ImageUrl="/Images/icon_delete.png" ToolTip="Delete" CssClass="Delete" />
+<asp:Image SkinID="imgDelete_Inactive" runat="server" ImageUrl="/Images/icon_delete_inactive.png" CssClass="Delete" />
+<telerik:RadButton SkinID="btnLogout" runat="server" Image-ImageUrl="/Images/BMM/btn_logout.png" />
+<telerik:RadButton SkinID="btnEdit" Height="31" Width="13" runat="server" Image-ImageUrl="/Images/BMM/icon_edit.png" CssClass="Edit" />
+<telerik:RadButton SkinID="btnView" Height="33" Width="18" runat="server" Image-ImageUrl="/Images/BMM/icon_view.png" CssClass="View" />

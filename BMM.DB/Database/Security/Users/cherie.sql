@@ -1,0 +1,2 @@
+CREATE USER [cherie] WITHOUT LOGIN
+GO

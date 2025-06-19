@@ -1,0 +1,67 @@
+﻿/*** 
+
+DMA Style Sheet
+
+***/
+
+
+#HeaderWrapper
+{
+    background-image: url('/Images/DMA/Header/header_repeat.jpg');
+}
+
+#Header
+{
+    background-image: url('/Images/DMA/Header/header.jpg');
+}
+
+.Navigation > li.Active span.Tab > img.LeftCap
+{
+    background-image: url('/Images/DMA/Header/nav_left_cap.png');
+}
+.Navigation > li.Active span.Tab > span.Name
+{
+    background-image: url('/Images/DMA/Header/nav_middle_repeat.gif');
+}
+.Navigation > li.Active span.Tab > img.RightCap
+{
+    background-image: url('/Images/DMA/Header/nav_right_cap.png');
+}
+.SubNavigation > li.Active
+{
+    background-image: url('/Images/DMA/Header/subnav_active_arrow.png');
+}
+
+h1, h2
+{
+    color: #004582 ;   
+}
+
+.Report_DivHeader,
+#Patient_Header
+{
+    background-color: #004582;
+}
+
+
+.Report_DivContent > div > div > a:hover
+{
+    color: #004582;   
+}
+
+
+form > .Header
+{
+    background-color: #004582;  
+}
+
+.rscLinkImg  
+{
+    background: url(/Images/DMA/btn_spell_check.png) no-repeat 0 0 transparent;
+    display: block;
+    height: 28px;
+    width: 82px;
+    overflow:hidden;
+    text-decoration:none; 
+    text-indent:-9999px; 
+}

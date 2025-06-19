@@ -1,0 +1,102 @@
+﻿table.Info 
+{
+    margin: 10px 0 20px 0;
+}
+table.Info > tbody > tr > th,
+table.Info > tbody > tr > td
+{
+    text-align: left;
+    vertical-align: top;
+}
+table.Info > tbody > tr > th 
+{
+    white-space: nowrap;
+}
+table.Info > tbody > tr + tr > th
+{
+    text-align: right;
+}
+table.Info > tbody > tr + tr > th,
+table.Info > tbody > tr + tr > td
+{
+    padding-top: 10px;
+    height: 10px;
+}
+table.Info > tbody > tr > th + td
+{
+    padding-left: 5px;
+}
+table.Info > tbody > tr > * + th,
+table.Info > tbody > tr > th.Firm,
+table.Info > tbody > tr > td.Contacts
+{
+    padding-left: 20px;
+}
+table.Info > tbody > tr > td.Contacts > div
+{
+    font-weight: bold;
+}
+table.Info > tbody > tr > td.Contacts,
+table.Info > tbody > tr > td.Spacer
+{
+    height: auto;
+}
+
+table.GridHeader th > *,
+table.GridHeader td > *
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+table.GridHeader
+{
+    width: 100%;
+    margin: 10px 0;
+}
+table.GridHeader th.Label 
+{
+    font-weight: bold;
+    padding-right: 5px;
+}
+table.GridHeader th.Label label 
+{
+    font-weight: bold;
+}
+table.GridHeader td.ComboBox 
+{
+    text-align: left;
+    width: 100%
+}
+table.GridHeader td.Button 
+{
+    text-align: right;
+}
+table.GridHeader th,
+table.GridHeader td
+{
+    vertical-align: middle;
+}
+
+.StatusOpen,
+.StatusClosed,
+.StatusOverdue,
+.StatusComplete
+{
+    font-size: 14px;
+}
+.StatusOpen
+{
+    color: #03F;
+}
+.StatusClosed
+{
+    color: #008000;
+}
+.StatusOverdue
+{
+    color: #C00;
+}
+.StatusComplete
+{
+    color: #FF8C00;
+}

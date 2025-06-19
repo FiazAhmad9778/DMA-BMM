@@ -1,0 +1,14 @@
+﻿<Telerik:RadComboBox runat="server" Skin="BMM"  EnableEmbeddedSkins="false" />
+
+<Telerik:RadDatePicker runat="server" Skin="BMM" MinDate="1900/01/01" EnableEmbeddedSkins="false" />
+
+<telerik:RadFormDecorator runat="server" EnableEmbeddedSkins="false" Skin="BMM" />
+
+<telerik:RadGrid  runat="server" AutoGenerateColumns="false" EnableEmbeddedSkins="false" Skin="BMM" >
+    <MasterTableView style="border:0px;" CellSpacing="0" CellPadding="0"> 
+    <PagerStyle Mode="NextPrevAndNumeric" PagerTextFormat=" {4} {2}-{3} of {5} Records Displayed" PrevPageText="<&nbsp;PREV&nbsp;" NextPageText="&nbsp;NEXT&nbsp;>"   />     
+    <NoRecordsTemplate>
+        <div style="padding:5px;">Sorry, no records were found.</div>
+    </NoRecordsTemplate>
+    </MasterTableView>
+</telerik:RadGrid>

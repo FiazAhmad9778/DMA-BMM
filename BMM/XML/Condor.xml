@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextBlocks>
+  <TextBlock Name="PAGE_TEST_HEADER">
+    <Literal>Test Page Header</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_TEST_PREFACE">
+    <Literal>Test page preface.</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_TEST__BODY">
+    <Literal>User: </Literal>
+    <Parameter Name="UserName" />
+    <Literal>&lt;br /&gt;
+Name: </Literal>
+    <Parameter Name="LastName" />
+    <Literal>, </Literal>
+    <Parameter Name="FirstName" />
+    <Literal>&lt;br /&gt;
+Date: </Literal>
+    <Parameter Name="TimeAdded" />
+  </TextBlock>
+  <TextBlock Name="EMAIL_FORGOTPASSWORD_BODY_HTML">
+    <Literal>Dear </Literal>
+    <Parameter Name="Fname" />
+    <Literal> </Literal>
+    <Parameter Name="Lname" />
+    <Literal>,
+&lt;br /&gt;&lt;br /&gt;
+Below is your password to log into the </Literal>
+    <Parameter Name="CompanyName" />
+    <Literal> system.
+&lt;br /&gt;&lt;br /&gt;
+Password: </Literal>
+    <Parameter Name="NewPassword" />
+    <Literal>
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Thank you,
+Site Admin</Literal>
+  </TextBlock>
+  <TextBlock Name="EMAIL_FORGOTPASSWORD_SUBJECT_TEXT" Description="Forgot Password subject line">
+    <Literal>Your passwoard to the </Literal>
+    <Parameter Name="CompanyName" />
+    <Literal> system</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_HOME_HEADER_HTML">
+    <Literal>Quick Statistics</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_HOME_REPORTHEADER_HTML">
+    <Literal>General Statistics</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_HOME_TOTALTEST_HTML">
+    <Literal>Total tests for Selected Time Period:</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_HOME_TOTALAMOUNTCOLLECTED_HTML">
+    <Literal>Total Amount Collected during Selected Time Period:</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_HOME_TOTALMRIS_HTML">
+    <Literal>Total MRIs:</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_HOME_TOTALSURGERIES_HTML">
+    <Literal>Total Surgeries for Selected Time Period:</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_HOME_PAYMENTSMADE_HTML">
+    <Literal>Payments Made to Provides during Selected Time Period:</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGEUSERS_HEADER_HTML">
+    <Literal>Users</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_HOME_TITLE_TEXT">
+    <Parameter Name="CompanyName" />
+    <Literal> - Home</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_INVOICESEARCH_TITLE_TEXT">
+    <Parameter Name="CompanyName" />
+    <Literal> - Invoice Search</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_INVOICESEARCH_HEADER_HTML">
+    <Literal>Invoices</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGEATTORNEYS_HEADER_HTML">
+    <Literal>Attorneys</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGEATTORNEYS_TITLE_TEXT">
+    <Parameter Name="CompanyName" />
+    <Literal> - Manage Attorneys</Literal>
+  </TextBlock>
+  <TextBlock Name="WINDOW_CONFIRMDELETEINVOICE_TITLE_HTML">
+    <Literal>Confirm Invoice Deletion</Literal>
+  </TextBlock>
+  <TextBlock Name="WINDOW_CONFIRMDELETEINVOICE_HTML">
+    <Literal>Are you sure you want to delete this record?</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_INVOICESEARCH_ERRORMESSAGE_SSNDOESNOTEXIST_TEXT">
+    <Literal>SSN entered does not exist. Please try search again.</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_INVOICESEARCH_ERRORMESSAGE_NAMEDOESNOTEXIST_TEXT">
+    <Literal>Patient name entered does not exist. Please try search again.</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_INVOICESEARCH_ERRORMESSAGE_INVOICENUMBERDOESNOTEXIST_TEXT">
+    <Literal>Invoice number entered does not exist. Please try search again.</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_INVOICESEARCH_ERRORMESSAGE_NOCRITERIAENTERED_TEXT">
+    <Literal>Please enter search criteria in a field.</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_INVOICESEARCH_ERRORMESSAGE_ACCIDENTDATEDOESNOTEXIST_TEXT">
+    <Literal>Accidents on date entered do not exist. Please try search again.</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_INVOICESEARCH_ERRORMESSAGE_MULITPLECRITERIAENTERED_TEXT">
+    <Literal>Please enter search criteria in only one field.</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_INVOICESEARCH_MULTIPLEPATIENTSWITHACCIDENTDATE_TEXT">
+    <Literal>The following patients have a Date of Accident of </Literal>
+    <Parameter Name="DateOfAccident" Format="MM/dd/yyyy" />
+    <Literal>:</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_INVOICESEARCHBYATTORNEY_TITLE_TEXT">
+    <Parameter Name="CompanyName" />
+    <Literal> - Invoice Search By Attorney</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_INVOICESEARCHBYATTORNEY_HEADER_HTML">
+    <Literal>Search By Attorney</Literal>
+  </TextBlock>
+  <TextBlock Name="TOOLTIP_USERCANNOTADDINVOICE_TEXT">
+    <Literal>You are unable to add any Invoices because you do not have the user permissions to do so.</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_INVOICESEARCHBYATTORNEY_ERRORMESSAGE_NAMEDOESNOTEXIST_TEXT">
+    <Literal>Attorney name entered does not exist. Please try search again.</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGEATTORNEYS_SUBHEADER_HTML">
+    <Literal>Search:</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGEFIRMS_TITLE_TEXT">
+    <Parameter Name="CompanyName" />
+    <Literal> - Manage Firms</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGEFIRMS_HEADER_HTML">
+    <Literal>Firms</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGEFIRMS_SUBHEADER_HTML">
+    <Literal>Search:</Literal>
+  </TextBlock>
+  <TextBlock Name="TEXT_USER_DOESNT_HAVE_PERMISSION_TEXT">
+    <Literal>TEXT_USER_DOESNT_HAVE_PERMISSION_TEXT</Literal>
+  </TextBlock>
+  <TextBlock Name="TOOLTIP_USERCANNOTEDITINVOICE_TEXT">
+    <Literal>You are unable to edit any Invoices because you do not have the user permissions to do so.</Literal>
+  </TextBlock>
+  <TextBlock Name="TOOLTIP_USERCANNOTDELETEINVOICE_TEXT">
+    <Literal>You are unable to delete any Invoices because you do not have the user permissions to do so.</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGEUSERS_TITLE_TEXT">
+    <Parameter Name="CompanyLongName" />
+    <Literal>: Manage Users</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_ADDEDITUSERS_HEADER_Edit_HTML">
+    <Literal>Edit User Record</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_ADDEDITUSERS_HEADER_Add_HTML">
+    <Literal>Add User Record</Literal>
+  </TextBlock>
+  <TextBlock Name="WINDOW_CONFIRMDELETE_USER_TITLE_HTML">
+    <Literal>Confirm User Deletion</Literal>
+  </TextBlock>
+  <TextBlock Name="WINDOW_CONFIRMDELETE_USER_HTML">
+    <Literal>Are you sure you want to delete this user?</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_ADDEDITUSERS_TITLE_TEXT">
+    <Parameter Name="CompanyLongName" />
+    <Literal> : Add Edit User</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGEFIRMS_TITLE_TEXT">
+    <Literal>Manage Firms</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGEFIRMS_HEADER_HTML">
+    <Literal>Firms</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGEFIRMS_SUBHEADER_HTML">
+    <Literal>Search:</Literal>
+  </TextBlock>
+  <TextBlock Name="WINDOW_CONFIRMDELETE_FIRM_TITLE_HTML">
+    <Literal>Confirm Firm Deletion</Literal>
+  </TextBlock>
+  <TextBlock Name="WINDOW_CONFIRMDELETE_FIRM_HTML">
+    <Literal>Are you sure you want to delete this firm?</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGEATTORNEYS_SUBHEADER_HTML">
+    <Literal>Search:</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGEUSERS_TITLE_TEXT">
+    <Literal>PAGE_MANAGEUSERS_TITLE_TEXT</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGEPATIENTS_TITLE_TEXT">
+    <Parameter Name="CompanyName" />
+    <Literal> - Manage Patients</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGEPATIENTS_HEADER_HTML">
+    <Literal>Patients</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGEPATIENTS_SUBHEADER_HTML">
+    <Literal>Search:</Literal>
+  </TextBlock>
+  <TextBlock Name="WINDOW_CONFIRMDELETE_PATIENT_TITLE_HTML">
+    <Literal>Confirm Patient Deletion</Literal>
+  </TextBlock>
+  <TextBlock Name="WINDOW_CONFIRMDELETE_PATIENT_HTML">
+    <Literal>Are you sure you want to delete this patient?</Literal>
+  </TextBlock>
+  <TextBlock Name="WINDOW_HASACTIVEINVOICE_ATTORNEY_HTML">
+    <Literal>This attorney is currently assigned to an invoice.  You will not be able to delete this attorney.</Literal>
+  </TextBlock>
+  <TextBlock Name="WINDOW_CONFIRMDELETE_ATTORNEY_TITLE_HTML">
+    <Literal>Confirm Attorney Deletion</Literal>
+  </TextBlock>
+  <TextBlock Name="WINDOW_HASACTIVEINVOICE_FIRM_HTML">
+    <Literal>This firm is currently assigned to an invoice.  You will not be able to delete this firm.</Literal>
+  </TextBlock>
+  <TextBlock Name="WINDOW_HASACTIVEINVOICE_PATIENT_HTML">
+    <Literal>This patient is currently assigned to an invoice.  You will not be able to delete this patient.</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGEPROVIDERS_TITLE_TEXT">
+    <Parameter Name="CompanyName" />
+    <Literal> - Manage Providers</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGEPROVIDERS_HEADER_HTML">
+    <Literal>Providers</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGEPROVIDERS_SUBHEADER_HTML">
+    <Literal>Search:</Literal>
+  </TextBlock>
+  <TextBlock Name="WINDOW_CONFIRMDELETE_Provider_HTML">
+    <Literal>Are you sure you want to delete this provider?</Literal>
+  </TextBlock>
+  <TextBlock Name="WINDOW_CONFIRMDELETE_PROVIDER_TITLE_HTML">
+    <Literal>Confirm Provider Deletion</Literal>
+  </TextBlock>
+  <TextBlock Name="CANNOT_VIEW_SECTION_TEXT">
+    <Literal>You do not have permission to view this section.</Literal>
+  </TextBlock>
+  <TextBlock Name="TOOLTIP_USERCANNOTADDTEST_TEXT">
+    <Literal>You are unable to add any Tests because you do not have the user permissions to do so.</Literal>
+  </TextBlock>
+  <TextBlock Name="TOOLTIP_USERCANNOTEDITTEST_TEXT">
+    <Literal>You are unable to edit any Tests because you do not have the user permissions to do so.</Literal>
+  </TextBlock>
+  <TextBlock Name="TOOLTIP_USERCANNOTDELETETEST_TEXT">
+    <Literal>You are unable to delete any Tests because you do not have the user permissions to do so.</Literal>
+  </TextBlock>
+  <TextBlock Name="WINDOW_CONFIRMDELETETESTINVOICETEST_TITLE_HTML">
+    <Literal>Confirm Test Deletion</Literal>
+  </TextBlock>
+  <TextBlock Name="WINDOW_CONFIRMDELETETESTINVOICETEST_HTML">
+    <Literal>Are you sure you want to delete this record?</Literal>
+  </TextBlock>
+  <TextBlock Name="TOOLTIP_USERCANNOTADDSURGERY_TEXT">
+    <Literal>TOOLTIP_USERCANNOTADDSURGERY_TEXT</Literal>
+  </TextBlock>
+  <TextBlock Name="TOOLTIP_USERCANNOTEDITSURGERY_TEXT">
+    <Literal>TOOLTIP_USERCANNOTEDITSURGERY_TEXT</Literal>
+  </TextBlock>
+  <TextBlock Name="TOOLTIP_USERCANNOTDELETESURGERY_TEXT">
+    <Literal>TOOLTIP_USERCANNOTDELETESURGERY_TEXT</Literal>
+  </TextBlock>
+  <TextBlock Name="WINDOW_CONFIRMDELETESURGERYINVOICESURGERY_TITLE_HTML">
+    <Literal>Confirm Surgery Deletion</Literal>
+  </TextBlock>
+  <TextBlock Name="WINDOW_CONFIRMDELETESURGERYINVOICESURGERY_HTML">
+    <Literal>Are you sure you want to delete this record?</Literal>
+  </TextBlock>
+  <TextBlock Name="WINDOW_CONFIRMDELETESURGERYINVOICEPROVIDER_TITLE_HTML">
+    <Literal>Confirm Provider Deletion</Literal>
+  </TextBlock>
+  <TextBlock Name="WINDOW_CONFIRMDELETESURGERYINVOICEPROVIDER_HTML">
+    <Literal>Are you sure you want to delete this record?</Literal>
+  </TextBlock>
+  <TextBlock Name="WINDOW_CANNOTDELETESURGERYINVOICEPROVIDER_TITLE_HTML">
+    <Literal>Cannot Delete Provider</Literal>
+  </TextBlock>
+  <TextBlock Name="WINDOW_CANNOTDELETESURGERYINVOICEPROVIDER_HTML">
+    <Literal>Can not delete selected Provider because payments have been logged to the Provider.</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGELOANTERMS_TITLE_TEXT">
+    <Parameter Name="CompanyName" />
+    <Literal> - Manage Loan Terms</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGELOANTERMS_HEADER_TEXT">
+    <Literal>Loan Terms</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGELOANTERMS_PREFACE_TEXT">
+    <Literal>Note, when Loan Terms are changed, existing invoices will retain the Loan Terms applied to the invoice when it was created.  All new invoices created will have the new Loan Terms applied to them.</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGELOANTERMS_TESTINGLOANLABEL_TEXT">
+    <Literal>Testing Invoices:</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGELOANTERMS_YEARLYINTRESTLABEL_TEXT">
+    <Literal>Yearly Interest:</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGELOANTERMS_LOANTERMLABEL_TEXT">
+    <Literal>Loan Terms (in months):</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGELOANTERMS_SERVICEFEEWAIVEDTIMEPERIOD_TEXT">
+    <Literal>Interest Waived Time Period (in months):</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGELOANTERMS_SURGERYLOANLABEL_TEXT">
+    <Literal>Surgery Invoices:</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGETESTS_HEADER_HTML">
+    <Literal>Tests</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGETESTS_TEXTBOX_TEXT">
+    <Literal>Type of Test:</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGETESTS_GRIDLABEL_TEXT">
+    <Literal>Configured Tests:</Literal>
+  </TextBlock>
+  <TextBlock Name="WINDOW_CONFIRMDELETE_TEST_HTML">
+    <Literal>Are you sure you want to delete this test?</Literal>
+  </TextBlock>
+  <TextBlock Name="WINDOW_CONFIRMDELETE_TEST_TITLE_HTML">
+    <Literal>Confirm Test Deletion</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGETESTS_TITLE_TEXT">
+    <Parameter Name="CompanyName" />
+    <Literal> - Manage Tests</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGEPHYSICIANS_TITLE_TEXT">
+    <Parameter Name="CompanyName" />
+    <Literal> - Manage Physicians</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGEPHYSICIANS_HEADER_HTML">
+    <Literal>Physicians</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGEPHYSICIANS_SUBHEADER_HTML">
+    <Literal>Search:</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGECPTCODES_TITLE_TEXT">
+    <Literal>Manage CPT Codes</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGECPTCODES_HEADER_HTML">
+    <Literal>CPT Codes</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGECPTCODES_CPTCODELBL_TEXT">
+    <Literal>CPT Code:</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGECPTCODES_DESCRIPTIONLBL_TEXT">
+    <Literal>Description:</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGECPTCODES_GRIDLABEL_TEXT">
+    <Literal>Configured Codes:</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGESURGERIES_TITLE_TEXT">
+    <Parameter Name="CompanyName" />
+    <Literal> - Manage Procedures</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGEPSURGERIES_HEADER_HTML">
+    <Literal>Procedures</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGESURGERIES_TEXTBOX_TEXT">
+    <Literal>Type of Procedure/Surgery:</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_MANAGESURGERIES_GRIDLABEL_TEXT">
+    <Literal>Configured Procedures:</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_REPORTSHOME_TITLE_TEXT">
+    <Parameter Name="CompanyName" />
+    <Literal> - Reports</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_REPORTSHOME_ACCOUNTSRECEIVABLE_SUBHEADER_TEXT">
+    <Literal>System Reports</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_REPORTSHOME_ACCOUNTSRECEIVABLE_REPORTLINK_TEXT">
+    <Literal>Accounts Receivables Report</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_REPORTSHOME_ACCOUNTSRECEIVABLE_DESCRIPTION_TEXT">
+    <Literal>View a listing of all the Receivables breakdowns for attorneys with open invoices. Viewing options include: Receivables, Receivables by Date, Past Due Receivables, Past Due Receivables by Date and Aging Report.</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_REPORTSHOME_HEADER_HTML">
+    <Literal>Reports</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_ACCOUNTSRECEIVABLEREPORT_HEADER_HTML">
+    <Literal>Account Receivables</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_REPORTSHOME_ATTORNEYREPORT_SUBHEADER_TEXT">
+    <Literal>Attorney Reports</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_REPORTSHOME_ATTORNEYSTATEMENTS_REPORTLINK_TEXT">
+    <Literal>Attorney Statements</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_REPORTSHOME_ATTORNEYSTATEMENTS_DESCRIPTION_TEXT">
+    <Literal>View a breakdown of what each Attorney owes. Views include All Invoices For Attorney and Past Due Invoices.</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_REPORTSHOME_ATTORNEYLETTERS_REPORTLINK_TEXT">
+    <Literal>Attorney Letters</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_REPORTSHOME_ATTORNEYLETTERS_DESCRIPTION_TEXT">
+    <Literal>Create the Attorney Letters to accompany the statements to be mailed out.</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_REPORTSHOME_ACCOUNTSPAYABLE_REPORTLINK_TEXT">
+    <Literal>Accounts Payables Report</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_REPORTSHOME_ACCOUNTSPAYABLE_DESCRIPTION_TEXT">
+    <Literal>View a listing of all the Payables due during a specified time period.</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_REPORTSHOME_CASHREPORT_REPORTLINK_TEXT">
+    <Literal>Cash Report</Literal>
+  </TextBlock>
+  <TextBlock Name="PAGE_REPORTSHOME_CASHREPORT_DESCRIPTION_TEXT">
+    <Literal>View a listing of Cash Collected during a specified time period. Viewing options include per attorney or all attorneys together.</Literal>
+  </TextBlock>
+</TextBlocks>

@@ -1,0 +1,321 @@
+﻿img
+{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+h1
+{
+    padding: 0px 20px 0 0;
+}
+
+.Form_Buttons
+{
+    padding-top: 15px;
+}
+
+.Pointer:hover
+{
+    cursor: pointer;
+}
+
+.Top
+{
+    vertical-align: top;
+}
+
+/*#ManageFirmsDiv,
+#ManagePhysiciansDiv
+{
+    padding: 0 20px 20px 0px;
+    width: 900px;
+}*/
+
+/*#ManageProvidersDiv,
+#ManagePatientsDiv,
+#ManageAttorneysDiv
+{
+    padding: 0 20px 20px 0px;
+    width: 900px;
+}*/
+
+#ManageAttorneysDiv > div,
+#ManageFirmsDiv > div,
+#ManagePatientsDiv > div,
+#ManageProvidersDiv > div,
+#ManagePhysiciansDiv > div
+{
+    margin: 0;
+    padding: 0 0 15px 0;
+}
+
+#ManageAttorneysDiv > div > div,
+#ManageFirmsDiv > div > div,
+#ManagePatientsDiv > div > div,
+#ManageProvidersDiv > div > div,
+#ManagePhysiciansDiv > div > div
+{
+    margin: 0;
+    padding: 0;
+}
+
+#ManageAttorneysDiv > div > div,
+#ManageFirmsDiv > div > div,
+#ManageProvidersDiv > div > div,
+#ManagePhysiciansDiv > div > div
+{
+    padding-right: 10px; 
+    height:33px;
+    line-height: 33px;    
+}
+
+#ManageAttorneysDiv > div > .btnAdd,
+#ManageFirmsDiv > div > .btnAdd,
+#ManageProvidersDiv > div > .btnAdd,
+#ManagePhysiciansDiv > div > .btnAdd
+{
+    padding-right: 0;
+    text-align: right;        
+}
+
+#ManageAttorneysDiv > div > table,
+#ManageFirmsDiv > div > table,
+#ManagePatientsDiv > div > table,
+#ManageProvidersDiv > div > table,
+#ManagePhysiciansDiv > div > div
+{
+   padding: 0;
+   margin: 0; 
+}
+
+#ManageAttorneysDiv > div > table > tr > td,
+#ManageFirmsDiv > div > table > tr > td,
+#ManagePatientsDiv > div > table > tr > td,
+#ManageProvidersDiv > div > table > tr > td,
+#ManagePhysiciansDiv > div > table > tr > td
+{
+    margin: 0;
+    padding: 0;
+    width: 375px;
+}
+
+
+.manageAttorneySubTitle, 
+.manageFirmSubTitle,
+.managePatientSubTitle,
+.manageProviderSubTitle,
+.managePhysicianSubTitle
+{
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    color: #404040;
+}
+
+.manageAttorneyLabel, 
+.manageFirmLabel,
+.managePatientLabel,
+.manageProviderLabel,
+.managePhysicianLabel
+{
+   font-family: Arial;
+   font-size: 12px;
+   font-weight: bold;
+   color: #404040;
+}
+
+#divSearch
+{
+   line-height: 35px; 
+   float:left; 
+   padding-right: 5px;
+}
+
+
+/*#ManageUsersDiv
+{
+    width: 750px;
+}*/
+
+#ManageUsersDiv > div
+{
+     /*float: right;*/ 
+     padding-bottom: 15px;  
+}
+
+#AddEditUsers_Permissions
+{
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#AddEditUsers_Permissions *
+{
+    font-size: 14px;
+}
+
+#AddEditUsers_Permissions > tbody > tr > td > div
+{
+    padding-left: 20px;   
+}
+
+#AddEditUsers_Permissions > tbody > tr > td > span
+{
+    padding: 0 3px 0 3px;
+}
+
+.FormPadding
+{
+    padding-top: 20px;
+}
+
+table .Textbox
+{
+    resize: none;    
+}
+
+.DivFloatRight
+{
+    float: right;
+}
+
+#Patient_Header
+{
+    line-height: 33px;
+    width: 460px;
+}
+
+#Patient_Header > h2
+{
+    color: #f3f1e9;
+    padding-left: 9px;
+    font-size: 16px;
+    display: inline;
+}
+
+#Patient_Header > img
+{
+    border: 0;
+    margin: 0;
+    padding-left: 10px;
+    line-height: 33px;
+}
+
+#Patient_Header > img:hover
+{
+    cursor: pointer;
+}
+
+#Patient_Content
+{
+    background-color: #e4dfc8;
+    text-align: center;
+}
+
+#Patient_Content > div
+{
+    padding: 15px 17px 15px 17px;
+}
+
+.DivFloatLeft
+{
+    width: 550px;
+    float: left;
+}
+
+/*****************
+ MANAGE SURGERIES
+   MANAGE TESTS
+ MANAGE CPT CODES
+*****************/
+
+/*#ManageSurgeriesDiv > div,
+#ManageTestsDiv > div,
+#ManageCPTCodesDiv > div
+{
+    padding: 10px 20px 20px 0px;
+    width: 800px;
+}*/
+
+#ManageSurgeriesDiv > div,
+#ManageSurgeriesDiv > div > .manageSurgeriesLabel,
+#ManageTestsDiv > div,
+#ManageTestsDiv > div > .manageTestsLabel,
+#ManageCPTCodesDiv > div > .manageCPTCodesLabel,
+#ManageCPTCodesDiv > .manageCPTCodesLabel
+{
+   font-family: Arial;
+   font-size: 12px;
+   font-weight: bold;
+   color: #404040;
+}
+
+#ManageSurgeriesDiv > table > tr > td > div,
+#ManageTestsDiv > table > tr > td > div,
+#ManageCPTCodesDiv > table > tr > td > div
+{
+    height: 33px;
+    margin: 0px;
+    padding: 0 0 0 5px;
+}
+
+.manageSurgeriesLabel,
+.manageTestsLabel,
+.manageCPTCodesLabel
+{
+    padding-bottom: 10px;
+}
+
+/***************
+   LOAN TERMS
+***************/
+
+#ManageLoanTermsDiv
+{
+    text-align: left;
+    width: 660px;    
+}
+
+#ManageLoanTermsDiv > div > div
+{
+   font-family: Arial;
+   font-size: 12px;
+   font-weight: bold;
+   color: #404040;
+}
+
+#ManageLoanTermsDiv > div > div > div
+{
+   font-family: Arial;
+   font-size: 12px;
+   font-weight: normal;
+   color: #404040;
+}
+
+#divSaveCancel
+{
+    text-align: right;    
+}
+
+#ManageLoanTermsDiv > div > .PrefaceText
+{
+    font-weight: normal;    
+}
+
+/***************/
+
+.UserControl_Buttons
+{
+    float:right;
+}
+
+.UserControl_Buttons > div
+{
+  float:right;   
+}
+.UserControl_Buttons > div + div
+{
+    float: right;
+}

@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="BMM.Master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE" >
+    <meta http-equiv="PRAGMA" content="NO-CACHE" >
+    <%--<meta name="viewport" content="width=device-width, initial-scale=1">--%>
+    <title></title>
+    <%--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">--%>
+    <link href="/CSS/Global.css" rel="stylesheet" type="text/css" />
+    <asp:Literal ID="litFavicon" runat="server" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/Scripts/Navigation.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="scriptman1" runat="server" ScriptMode="Release" />
+    <telerik:RadFormDecorator ID="RadFormDecorator2" runat="server" EnableEmbeddedSkins="false" DecoratedControls="RadioButtons, CheckBoxes, Buttons" />
+    <div id="HeaderWrapper">
+        <div id="Header">
+            <Telerik:RadButton ID="btnLogout" runat="server" OnClick="btnLogout_Click" CausesValidation="false" SkinID="btnLogout" Image-EnableImageButton="true" Width="77" Height="33" />
+            <a ID="aHome" runat="server" href="Home.aspx" class="Logo"></a>
+            <ul class="Navigation" id="ulNavigation" runat="server">
+                <li class="Home" id="liHome" runat="server"><a href="/Home.aspx"><span class="Tab"><img src="/Images/transparent.gif" class="LeftCap" /><span class="Name">Home</span><img src="/Images/transparent.gif" class="RightCap" /></span></a></li><li class="Invoices" id="liInvoices" runat="server"><a href="/InvoiceSearch.aspx"><span class="Tab"><img src="/Images/transparent.gif" class="LeftCap" /><span class="Name">Invoices</span><img src="/Images/transparent.gif" class="RightCap" /></span></a></li><li class="Invoices" id="liPatients" visible="false" runat="server"><a href="/ManagePatients.aspx"><span class="Tab"><img src="/Images/transparent.gif" class="LeftCap" /><span class="Name">Patients</span><img src="/Images/transparent.gif" class="RightCap" /></span></a></li><li class="Reports" id="liReports" visible="false" runat="server"><a href="/ReportsHome.aspx"><span class="Tab"><img src="/Images/transparent.gif" class="LeftCap" /><span class="Name">Reports</span><img src="/Images/transparent.gif" class="RightCap" /></span></a></li><li class="AdminConfig" id="liAdminConfig" visible="false" runat="server"><span class="Tab"><img src="/Images/transparent.gif" class="LeftCap" /><span class="Name">Admin</span><img src="/Images/transparent.gif" class="RightCap" /></span></li>
+            </ul>
+            <ul class="SubNavigation AdminConfig" id="ulAdminConfig" runat="server">
+                <li id="liAdminFirms" runat="server"></li><li id="liAdminAttorneys" runat="server"></li><li id="liAdminProviders" runat="server"></li><li id="liAdminPhysicians" runat="server"></li><li id="liAdminCPTCodes" runat="server"></li><li id="liAdminICDCodes" runat="server"></li><li id="liAdminProcedures" runat="server"></li><li id="liAdminTests" runat="server"></li><li id="liAdminLoanTerms" runat="server"></li><li id="liAdminUsers" runat="server"></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="Content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+    </div>
+
+    </form>
+    <%--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>--%>
+</body>
+</html>

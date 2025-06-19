@@ -1,0 +1,1073 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8087A80F-2EC2-4343-A260-05B94D2EF966}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BMM</RootNamespace>
+    <AssemblyName>BMM</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseIISExpress>true</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <FilesToIncludeForPublish>AllFilesInProjectFolder</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\BMM.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\BMM.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="DevEmail, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevEmail.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ASPPDFLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Interop.ASPPDFLib.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Types, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.12.0.5000.0\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.Web.UI, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting, Version=17.2.23.1114, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WebForms, Version=17.2.23.1114, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddEditAttorney.aspx" />
+    <Content Include="AddEditFirm.aspx" />
+    <Content Include="AddEditInvoice.aspx" />
+    <Content Include="AddEditPatient.aspx" />
+    <Content Include="AddEditPhysician.aspx" />
+    <Content Include="AddEditProvider.aspx" />
+    <Content Include="AddEditSurgery.aspx" />
+    <Content Include="AddEditSurgeryProvider.aspx" />
+    <Content Include="AddEditUsers.aspx" />
+    <Content Include="App_Themes\BMM\Calender.BMM.css" />
+    <Content Include="App_Themes\BMM\ComboBox.BMM.css" />
+    <Content Include="App_Themes\BMM\FormDecorator.BMM.css" />
+    <Content Include="App_Themes\BMM\BMM_Style.css" />
+    <Content Include="App_Themes\DMA\Calender.DMA.css" />
+    <Content Include="App_Themes\DMA\ComboBox.DMA.css" />
+    <Content Include="App_Themes\DMA\FormDecorator.DMA.css" />
+    <Content Include="App_Themes\DMA\Grid.DMA.css" />
+    <Content Include="App_Themes\DMA\DMA_Style.css" />
+    <Content Include="App_Themes\BMM\Grid.BMM.css" />
+    <Content Include="Controls\UserControl_AttorneyTerms.ascx" />
+    <Content Include="Controls\UserControl_Contacts.ascx" />
+    <Content Include="AddEditTest.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="ManageICDCodes.aspx" />
+    <Content Include="ReportPages\ClientPayoffQuotationReport.aspx" />
+    <Content Include="ReportPages\AttorneyListReports.aspx" />
+    <Content Include="ReportPages\CPTReport.aspx" />
+    <Content Include="ReportPages\DiscountReport.aspx" />
+    <Content Include="ReportPages\AccountsPayableReport.aspx" />
+    <Content Include="ReportPages\AccountsReceivableReport.aspx" />
+    <Content Include="ReportPages\AttorneyCashReport.aspx" />
+    <Content Include="ReportPages\AttorneyLettersReport.aspx" />
+    <Content Include="ReportPages\AttorneyStatementsReports.aspx" />
+    <Content Include="ReportPages\ICDCodeReport.aspx" />
+    <Content Include="ReportPages\PatientReport.aspx" />
+    <Content Include="ReportPages\PercentCash-LossCollected_ByDays.aspx" />
+    <Content Include="ReportPages\ProviderInvoiceReport.aspx" />
+    <Content Include="ReportPages\TotalRevenueReport.aspx" />
+    <Content Include="ReportPages\ProviderPaymentsReport.aspx" />
+    <Content Include="ReportPages\TotalTestsAndSurgeriesByAttorney.aspx" />
+    <Content Include="CSS\Global.css" />
+    <Content Include="CSS\Home.css" />
+    <Content Include="CSS\InvoiceSearch.css" />
+    <Content Include="CSS\ManageAddEdit.css" />
+    <Content Include="CSS\Modals.css" />
+    <Content Include="CSS\Reports.css" />
+    <Content Include="Documents\SurgeryWorksheet.aspx" />
+    <Content Include="Documents\TestWorksheet.aspx" />
+    <Content Include="Documents\SurgeryLetterToPatient.aspx" />
+    <Content Include="Documents\TestLetterToPatient.aspx" />
+    <Content Include="Documents\TestGuarantorAuthorization.aspx" />
+    <Content Include="Documents\SurgeryGuarantorAuthorization.aspx" />
+    <Content Include="Error.aspx" />
+    <Content Include="ForgotPassword.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Home.aspx" />
+    <Content Include="Images\BMM\btn_logout.png" />
+    <Content Include="Images\BMM\favicon.ico" />
+    <Content Include="Images\BMM\Header\header.jpg" />
+    <Content Include="Images\BMM\Header\nav_left_cap.png" />
+    <Content Include="Images\BMM\Header\nav_middle_repeat.gif" />
+    <Content Include="Images\BMM\Header\nav_right_cap.png" />
+    <Content Include="Images\BMM\Header\subnav_active_arrow.png" />
+    <Content Include="Images\BMM\icon_edit.png" />
+    <Content Include="Images\BMM\icon_flag.png" />
+    <Content Include="Images\BMM\icon_inactive_edit.png" />
+    <Content Include="Images\BMM\icon_inactive_view.png" />
+    <Content Include="Images\BMM\icon_view.png" />
+    <Content Include="Images\BMM\Sprites\ButtonSprites_BMM.gif" />
+    <Content Include="Images\BMM\Sprites\ButtonSprites_BMMtest.gif" />
+    <Content Include="Images\BMM\Sprites\CalenderSprite_BMM.gif" />
+    <Content Include="Images\BMM\Sprites\CheckBoxSprites_BMM.gif" />
+    <Content Include="Images\BMM\Sprites\RadioButtonSprites_BMM.gif" />
+    <Content Include="Images\BMM\Sprites\rcb_BMM_Sprite.png" />
+    <Content Include="Images\BMM\btn_spell_check.png" />
+    <Content Include="Images\btn_collapse.png" />
+    <Content Include="Images\btn_expand.png" />
+    <Content Include="Images\DMA\btn_logout.png" />
+    <Content Include="Images\DMA\btn_spell_check.png" />
+    <Content Include="Images\DMA\favicon.ico" />
+    <Content Include="Images\DMA\Header\header.jpg" />
+    <Content Include="Images\DMA\Header\header_repeat.jpg" />
+    <Content Include="Images\DMA\Header\nav_left_cap.png" />
+    <Content Include="Images\DMA\Header\nav_middle_repeat.gif" />
+    <Content Include="Images\DMA\Header\nav_right_cap.png" />
+    <Content Include="Images\DMA\Header\subnav_active_arrow.png" />
+    <Content Include="Images\DMA\icon_edit.png" />
+    <Content Include="Images\DMA\icon_flag.png" />
+    <Content Include="Images\DMA\icon_inactive_edit.png" />
+    <Content Include="Images\DMA\icon_inactive_view.png" />
+    <Content Include="Images\DMA\icon_view.png" />
+    <Content Include="Images\DMA\Modals\btn_close.png" />
+    <Content Include="Images\DMA\Sprites\ButtonSprites_DMA.gif" />
+    <Content Include="Images\DMA\Sprites\CalenderSprite_DMA.gif" />
+    <Content Include="Images\DMA\Sprites\CheckBoxSprites_DMA.gif" />
+    <Content Include="Images\DMA\Sprites\RadioButtonSprites_DMA.gif" />
+    <Content Include="Images\DMA\Sprites\rcb_DMA_Sprite.png" />
+    <Content Include="Images\BMM\Modals\btn_close.png" />
+    <Content Include="Images\BMM\Header\header_repeat.jpg" />
+    <Content Include="Images\hr.png" />
+    <Content Include="Images\icon_delete.png" />
+    <Content Include="Images\icon_edit.png" />
+    <Content Include="Images\icon_delete_inactive.png" />
+    <Content Include="Images\icon_edit_inactive.png" />
+    <Content Include="Images\icon_view_inactive.png" />
+    <Content Include="Images\icon_view.png" />
+    <Content Include="Images\transparent.gif" />
+    <Content Include="InvoiceSearch.aspx" />
+    <Content Include="InvoiceSearchByAttorney.aspx" />
+    <Content Include="LoanTerms.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="ManageAttorneys.aspx" />
+    <Content Include="ManageCPTCodes.aspx" />
+    <Content Include="ManageFirms.aspx" />
+    <Content Include="ManagePatients.aspx" />
+    <Content Include="ManagePhysicians.aspx" />
+    <Content Include="ManageProviders.aspx" />
+    <Content Include="ManageSurgeries.aspx" />
+    <Content Include="ManageTests.aspx" />
+    <Content Include="ManageUsers.aspx" />
+    <Content Include="ReportsHome.aspx" />
+    <Content Include="Scripts\Navigation.js" />
+    <Content Include="ServiceTest.aspx" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr100.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr100.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestStyles.aspx" />
+    <Content Include="ThrowException.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Windows\ClientPayoffQuotationPopUp.aspx" />
+    <Content Include="Windows\AttorneyInfoPopUp.aspx" />
+    <Content Include="Windows\ConfirmDeleteAttorney.aspx" />
+    <Content Include="Windows\ConfirmDeleteAttorneyTerm.aspx" />
+    <Content Include="Windows\ConfirmDeleteContact.aspx" />
+    <Content Include="Windows\ConfirmDeleteCPTCode.aspx" />
+    <Content Include="Windows\ConfirmDeleteFirm.aspx" />
+    <Content Include="Windows\ConfirmDeleteICDCode.aspx" />
+    <Content Include="Windows\ConfirmDeletePatient.aspx" />
+    <Content Include="Windows\ConfirmDeletePhysician.aspx" />
+    <Content Include="Windows\ConfirmDeleteProcedure.aspx" />
+    <Content Include="Windows\ConfirmDeleteProvider.aspx" />
+    <Content Include="Windows\ConfirmDeleteSICDCodes.aspx" />
+    <Content Include="Windows\ConfirmDeleteTest.aspx" />
+    <Content Include="Windows\ConfirmDeleteUser.aspx" />
+    <Content Include="Windows\ConfirmDeleteInvoice.aspx" />
+    <Content Include="Windows\ConfirmDeleteTestInvoiceTest.aspx" />
+    <Content Include="Windows\ConfirmDeleteSurgeryInvoiceSurgery.aspx" />
+    <Content Include="Windows\ConfirmDeleteSurgeryInvoiceProvider.aspx" />
+    <Content Include="Windows\ConfirmDeleteInvoiceComment.aspx" />
+    <Content Include="Windows\ConfirmDeleteInvoicePayment.aspx" />
+    <Content Include="Windows\ConfirmDeleteInvoicePaymentComment.aspx" />
+    <Content Include="Windows\ConfirmDeleteCPTCharge.aspx" />
+    <Content Include="Windows\ConfirmDeleteProviderService.aspx" />
+    <Content Include="Windows\ConfirmDeleteProviderPayment.aspx" />
+    <Content Include="Windows\InvoiceSaved.aspx" />
+    <Content Include="Windows\FirmInfoPopUp.aspx" />
+    <Content Include="Windows\EditInvoiceLoanTerms.aspx" />
+    <Content Include="Windows\PhysicianInfoPopUp.aspx" />
+    <Content Include="Windows\ProviderInfoPopUp.aspx" />
+    <Content Include="Windows\ConfirmSaveInvoice.aspx" />
+    <Content Include="Windows\TestWindow.aspx" />
+    <Content Include="XML\Condor.xml" />
+    <Content Include="XML\SurgeryWorksheet.xsl" />
+    <Content Include="XML\TestWorksheet.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XML\SurgeryLetterToPatient.xsl" />
+    <Content Include="XML\TestLetterToPatient.xsl" />
+    <Content Include="XML\TestGuarantorAuthorization.xsl" />
+    <Content Include="XML\Devs.xml" />
+    <Content Include="XML\SurgeryGuarantorAuthorization.xsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddEditAttorney.aspx.cs">
+      <DependentUpon>AddEditAttorney.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddEditAttorney.aspx.designer.cs">
+      <DependentUpon>AddEditAttorney.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditFirm.aspx.cs">
+      <DependentUpon>AddEditFirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddEditFirm.aspx.designer.cs">
+      <DependentUpon>AddEditFirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditInvoice.aspx.cs">
+      <DependentUpon>AddEditInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddEditInvoice.aspx.designer.cs">
+      <DependentUpon>AddEditInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditPatient.aspx.cs">
+      <DependentUpon>AddEditPatient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddEditPatient.aspx.designer.cs">
+      <DependentUpon>AddEditPatient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditPhysician.aspx.cs">
+      <DependentUpon>AddEditPhysician.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddEditPhysician.aspx.designer.cs">
+      <DependentUpon>AddEditPhysician.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditProvider.aspx.cs">
+      <DependentUpon>AddEditProvider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddEditProvider.aspx.designer.cs">
+      <DependentUpon>AddEditProvider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditSurgery.aspx.cs">
+      <DependentUpon>AddEditSurgery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddEditSurgery.aspx.designer.cs">
+      <DependentUpon>AddEditSurgery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditSurgeryProvider.aspx.cs">
+      <DependentUpon>AddEditSurgeryProvider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddEditSurgeryProvider.aspx.designer.cs">
+      <DependentUpon>AddEditSurgeryProvider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditUsers.aspx.cs">
+      <DependentUpon>AddEditUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddEditUsers.aspx.designer.cs">
+      <DependentUpon>AddEditUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BMMDataSet.cs">
+      <DependentUpon>BMMDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BMMDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMMDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes\TemporaryInvoice.cs" />
+    <Compile Include="Classes\Utility.cs" />
+    <Compile Include="Controls\UserControl_AttorneyTerms.ascx.cs">
+      <DependentUpon>UserControl_AttorneyTerms.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UserControl_AttorneyTerms.ascx.designer.cs">
+      <DependentUpon>UserControl_AttorneyTerms.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UserControl_Contacts.ascx.cs">
+      <DependentUpon>UserControl_Contacts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UserControl_Contacts.ascx.designer.cs">
+      <DependentUpon>UserControl_Contacts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditTest.aspx.cs">
+      <DependentUpon>AddEditTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddEditTest.aspx.designer.cs">
+      <DependentUpon>AddEditTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageICDCodes.aspx.cs">
+      <DependentUpon>ManageICDCodes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageICDCodes.aspx.designer.cs">
+      <DependentUpon>ManageICDCodes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPages\ClientPayoffQuotationReport.aspx.cs">
+      <DependentUpon>ClientPayoffQuotationReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPages\ClientPayoffQuotationReport.aspx.designer.cs">
+      <DependentUpon>ClientPayoffQuotationReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPages\AttorneyListReports.aspx.cs">
+      <DependentUpon>AttorneyListReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPages\AttorneyListReports.aspx.designer.cs">
+      <DependentUpon>AttorneyListReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPages\CPTReport.aspx.cs">
+      <DependentUpon>CPTReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPages\CPTReport.aspx.designer.cs">
+      <DependentUpon>CPTReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPages\DiscountReport.aspx.cs">
+      <DependentUpon>DiscountReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPages\DiscountReport.aspx.designer.cs">
+      <DependentUpon>DiscountReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPages\AccountsPayableReport.aspx.cs">
+      <DependentUpon>AccountsPayableReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPages\AccountsPayableReport.aspx.designer.cs">
+      <DependentUpon>AccountsPayableReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPages\AccountsReceivableReport.aspx.cs">
+      <DependentUpon>AccountsReceivableReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPages\AccountsReceivableReport.aspx.designer.cs">
+      <DependentUpon>AccountsReceivableReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPages\AttorneyCashReport.aspx.cs">
+      <DependentUpon>AttorneyCashReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPages\AttorneyCashReport.aspx.designer.cs">
+      <DependentUpon>AttorneyCashReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPages\AttorneyLettersReport.aspx.cs">
+      <DependentUpon>AttorneyLettersReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPages\AttorneyLettersReport.aspx.designer.cs">
+      <DependentUpon>AttorneyLettersReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPages\AttorneyStatementsReports.aspx.cs">
+      <DependentUpon>AttorneyStatementsReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPages\AttorneyStatementsReports.aspx.designer.cs">
+      <DependentUpon>AttorneyStatementsReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPages\ICDCodeReport.aspx.cs">
+      <DependentUpon>ICDCodeReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPages\ICDCodeReport.aspx.designer.cs">
+      <DependentUpon>ICDCodeReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPages\PatientReport.aspx.cs">
+      <DependentUpon>PatientReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPages\PatientReport.aspx.designer.cs">
+      <DependentUpon>PatientReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPages\PercentCash-LossCollected_ByDays.aspx.cs">
+      <DependentUpon>PercentCash-LossCollected_ByDays.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPages\PercentCash-LossCollected_ByDays.aspx.designer.cs">
+      <DependentUpon>PercentCash-LossCollected_ByDays.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPages\ProviderInvoiceReport.aspx.cs">
+      <DependentUpon>ProviderInvoiceReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPages\ProviderInvoiceReport.aspx.designer.cs">
+      <DependentUpon>ProviderInvoiceReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPages\TotalRevenueReport.aspx.cs">
+      <DependentUpon>TotalRevenueReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPages\TotalRevenueReport.aspx.designer.cs">
+      <DependentUpon>TotalRevenueReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPages\ProviderPaymentsReport.aspx.cs">
+      <DependentUpon>ProviderPaymentsReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPages\ProviderPaymentsReport.aspx.designer.cs">
+      <DependentUpon>ProviderPaymentsReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPages\TotalTestsAndSurgeriesByAttorney.aspx.cs">
+      <DependentUpon>TotalTestsAndSurgeriesByAttorney.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPages\TotalTestsAndSurgeriesByAttorney.aspx.designer.cs">
+      <DependentUpon>TotalTestsAndSurgeriesByAttorney.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\SurgeryWorksheet.aspx.cs">
+      <DependentUpon>SurgeryWorksheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documents\SurgeryWorksheet.aspx.designer.cs">
+      <DependentUpon>SurgeryWorksheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\TestWorksheet.aspx.cs">
+      <DependentUpon>TestWorksheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documents\TestWorksheet.aspx.designer.cs">
+      <DependentUpon>TestWorksheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\SurgeryLetterToPatient.aspx.cs">
+      <DependentUpon>SurgeryLetterToPatient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documents\SurgeryLetterToPatient.aspx.designer.cs">
+      <DependentUpon>SurgeryLetterToPatient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\TestLetterToPatient.aspx.cs">
+      <DependentUpon>TestLetterToPatient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documents\TestLetterToPatient.aspx.designer.cs">
+      <DependentUpon>TestLetterToPatient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\TestGuarantorAuthorization.aspx.cs">
+      <DependentUpon>TestGuarantorAuthorization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documents\TestGuarantorAuthorization.aspx.designer.cs">
+      <DependentUpon>TestGuarantorAuthorization.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\SurgeryGuarantorAuthorization.aspx.cs">
+      <DependentUpon>SurgeryGuarantorAuthorization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documents\SurgeryGuarantorAuthorization.aspx.designer.cs">
+      <DependentUpon>SurgeryGuarantorAuthorization.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceSearch.aspx.cs">
+      <DependentUpon>InvoiceSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InvoiceSearch.aspx.designer.cs">
+      <DependentUpon>InvoiceSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceSearchByAttorney.aspx.cs">
+      <DependentUpon>InvoiceSearchByAttorney.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InvoiceSearchByAttorney.aspx.designer.cs">
+      <DependentUpon>InvoiceSearchByAttorney.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanTerms.aspx.cs">
+      <DependentUpon>LoanTerms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanTerms.aspx.designer.cs">
+      <DependentUpon>LoanTerms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageAttorneys.aspx.cs">
+      <DependentUpon>ManageAttorneys.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageAttorneys.aspx.designer.cs">
+      <DependentUpon>ManageAttorneys.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageCPTCodes.aspx.cs">
+      <DependentUpon>ManageCPTCodes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageCPTCodes.aspx.designer.cs">
+      <DependentUpon>ManageCPTCodes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageFirms.aspx.cs">
+      <DependentUpon>ManageFirms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageFirms.aspx.designer.cs">
+      <DependentUpon>ManageFirms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagePatients.aspx.cs">
+      <DependentUpon>ManagePatients.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagePatients.aspx.designer.cs">
+      <DependentUpon>ManagePatients.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagePhysicians.aspx.cs">
+      <DependentUpon>ManagePhysicians.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagePhysicians.aspx.designer.cs">
+      <DependentUpon>ManagePhysicians.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageProviders.aspx.cs">
+      <DependentUpon>ManageProviders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageProviders.aspx.designer.cs">
+      <DependentUpon>ManageProviders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageSurgeries.aspx.cs">
+      <DependentUpon>ManageSurgeries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageSurgeries.aspx.designer.cs">
+      <DependentUpon>ManageSurgeries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageTests.aspx.cs">
+      <DependentUpon>ManageTests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageTests.aspx.designer.cs">
+      <DependentUpon>ManageTests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageUsers.aspx.cs">
+      <DependentUpon>ManageUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageUsers.aspx.designer.cs">
+      <DependentUpon>ManageUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportsHome.aspx.cs">
+      <DependentUpon>ReportsHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportsHome.aspx.designer.cs">
+      <DependentUpon>ReportsHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceTest.aspx.cs">
+      <DependentUpon>ServiceTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServiceTest.aspx.designer.cs">
+      <DependentUpon>ServiceTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="TestStyles.aspx.cs">
+      <DependentUpon>TestStyles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestStyles.aspx.designer.cs">
+      <DependentUpon>TestStyles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThrowException.aspx.cs">
+      <DependentUpon>ThrowException.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThrowException.aspx.designer.cs">
+      <DependentUpon>ThrowException.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ClientPayoffQuotationPopUp.aspx.cs">
+      <DependentUpon>ClientPayoffQuotationPopUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\ClientPayoffQuotationPopUp.aspx.designer.cs">
+      <DependentUpon>ClientPayoffQuotationPopUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\AttorneyInfoPopUp.aspx.cs">
+      <DependentUpon>AttorneyInfoPopUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\AttorneyInfoPopUp.aspx.designer.cs">
+      <DependentUpon>AttorneyInfoPopUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteAttorney.aspx.cs">
+      <DependentUpon>ConfirmDeleteAttorney.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteAttorney.aspx.designer.cs">
+      <DependentUpon>ConfirmDeleteAttorney.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteAttorneyTerm.aspx.cs">
+      <DependentUpon>ConfirmDeleteAttorneyTerm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteAttorneyTerm.aspx.designer.cs">
+      <DependentUpon>ConfirmDeleteAttorneyTerm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteContact.aspx.cs">
+      <DependentUpon>ConfirmDeleteContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteContact.aspx.designer.cs">
+      <DependentUpon>ConfirmDeleteContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteCPTCode.aspx.cs">
+      <DependentUpon>ConfirmDeleteCPTCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteCPTCode.aspx.designer.cs">
+      <DependentUpon>ConfirmDeleteCPTCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteFirm.aspx.cs">
+      <DependentUpon>ConfirmDeleteFirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteFirm.aspx.designer.cs">
+      <DependentUpon>ConfirmDeleteFirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteICDCode.aspx.cs">
+      <DependentUpon>ConfirmDeleteICDCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteICDCode.aspx.designer.cs">
+      <DependentUpon>ConfirmDeleteICDCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeletePatient.aspx.cs">
+      <DependentUpon>ConfirmDeletePatient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeletePatient.aspx.designer.cs">
+      <DependentUpon>ConfirmDeletePatient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeletePhysician.aspx.cs">
+      <DependentUpon>ConfirmDeletePhysician.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeletePhysician.aspx.designer.cs">
+      <DependentUpon>ConfirmDeletePhysician.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteProcedure.aspx.cs">
+      <DependentUpon>ConfirmDeleteProcedure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteProcedure.aspx.designer.cs">
+      <DependentUpon>ConfirmDeleteProcedure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteProvider.aspx.cs">
+      <DependentUpon>ConfirmDeleteProvider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteProvider.aspx.designer.cs">
+      <DependentUpon>ConfirmDeleteProvider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteSICDCodes.aspx.cs">
+      <DependentUpon>ConfirmDeleteSICDCodes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteSICDCodes.aspx.designer.cs">
+      <DependentUpon>ConfirmDeleteSICDCodes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteTest.aspx.cs">
+      <DependentUpon>ConfirmDeleteTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteTest.aspx.designer.cs">
+      <DependentUpon>ConfirmDeleteTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteUser.aspx.cs">
+      <DependentUpon>ConfirmDeleteUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteUser.aspx.designer.cs">
+      <DependentUpon>ConfirmDeleteUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteInvoice.aspx.cs">
+      <DependentUpon>ConfirmDeleteInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteInvoice.aspx.designer.cs">
+      <DependentUpon>ConfirmDeleteInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteTestInvoiceTest.aspx.cs">
+      <DependentUpon>ConfirmDeleteTestInvoiceTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteTestInvoiceTest.aspx.designer.cs">
+      <DependentUpon>ConfirmDeleteTestInvoiceTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteSurgeryInvoiceSurgery.aspx.cs">
+      <DependentUpon>ConfirmDeleteSurgeryInvoiceSurgery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteSurgeryInvoiceSurgery.aspx.designer.cs">
+      <DependentUpon>ConfirmDeleteSurgeryInvoiceSurgery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteSurgeryInvoiceProvider.aspx.cs">
+      <DependentUpon>ConfirmDeleteSurgeryInvoiceProvider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteSurgeryInvoiceProvider.aspx.designer.cs">
+      <DependentUpon>ConfirmDeleteSurgeryInvoiceProvider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteInvoiceComment.aspx.cs">
+      <DependentUpon>ConfirmDeleteInvoiceComment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteInvoiceComment.aspx.designer.cs">
+      <DependentUpon>ConfirmDeleteInvoiceComment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteInvoicePayment.aspx.cs">
+      <DependentUpon>ConfirmDeleteInvoicePayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteInvoicePayment.aspx.designer.cs">
+      <DependentUpon>ConfirmDeleteInvoicePayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteInvoicePaymentComment.aspx.cs">
+      <DependentUpon>ConfirmDeleteInvoicePaymentComment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteInvoicePaymentComment.aspx.designer.cs">
+      <DependentUpon>ConfirmDeleteInvoicePaymentComment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteCPTCharge.aspx.cs">
+      <DependentUpon>ConfirmDeleteCPTCharge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteCPTCharge.aspx.designer.cs">
+      <DependentUpon>ConfirmDeleteCPTCharge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteProviderService.aspx.cs">
+      <DependentUpon>ConfirmDeleteProviderService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteProviderService.aspx.designer.cs">
+      <DependentUpon>ConfirmDeleteProviderService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteProviderPayment.aspx.cs">
+      <DependentUpon>ConfirmDeleteProviderPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\ConfirmDeleteProviderPayment.aspx.designer.cs">
+      <DependentUpon>ConfirmDeleteProviderPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\InvoiceSaved.aspx.cs">
+      <DependentUpon>InvoiceSaved.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\InvoiceSaved.aspx.designer.cs">
+      <DependentUpon>InvoiceSaved.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\FirmInfoPopUp.aspx.cs">
+      <DependentUpon>FirmInfoPopUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\FirmInfoPopUp.aspx.designer.cs">
+      <DependentUpon>FirmInfoPopUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\EditInvoiceLoanTerms.aspx.cs">
+      <DependentUpon>EditInvoiceLoanTerms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\EditInvoiceLoanTerms.aspx.designer.cs">
+      <DependentUpon>EditInvoiceLoanTerms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\PhysicianInfoPopUp.aspx.cs">
+      <DependentUpon>PhysicianInfoPopUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\PhysicianInfoPopUp.aspx.designer.cs">
+      <DependentUpon>PhysicianInfoPopUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ProviderInfoPopUp.aspx.cs">
+      <DependentUpon>ProviderInfoPopUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\ProviderInfoPopUp.aspx.designer.cs">
+      <DependentUpon>ProviderInfoPopUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ConfirmSaveInvoice.aspx.cs">
+      <DependentUpon>ConfirmSaveInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\ConfirmSaveInvoice.aspx.designer.cs">
+      <DependentUpon>ConfirmSaveInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\TestWindow.aspx.cs">
+      <DependentUpon>TestWindow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows\TestWindow.aspx.designer.cs">
+      <DependentUpon>TestWindow.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BMM.Reports\BMM_Reports.csproj">
+      <Project>{8c29d503-66c0-4211-98d0-5dfdaa8647b9}</Project>
+      <Name>BMM_Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BMM_BAL\BMM_BAL.csproj">
+      <Project>{B53BBA0A-20AD-4EFC-AE2F-8AF36078BA5A}</Project>
+      <Name>BMM_BAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BMM_DAL\BMM_DAL.csproj">
+      <Project>{4CC8E5AA-51B1-4280-8080-6323FFBC2D81}</Project>
+      <Name>BMM_DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InfiniedgeLibrary\InfiniedgeLibrary.ExceptionHandling\InfiniedgeLibrary.ExceptionHandling.csproj">
+      <Project>{df3a40bf-79b9-430d-84d7-6381b0497962}</Project>
+      <Name>InfiniedgeLibrary.ExceptionHandling</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\BMM\Textbox.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\BMM\radControls.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\DMA\Textbox.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\DMA\radControls.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Data\RadSpell\de-DE.tdf" />
+    <None Include="App_Data\RadSpell\en-US.tdf" />
+    <None Include="App_Data\RadSpell\fr-FR.tdf" />
+    <Content Include="Master.Master" />
+    <Content Include="App_Themes\BMM\BMM.skin" />
+    <Content Include="App_Themes\DMA\DMA.skin" />
+    <None Include="BMMDataSet.xsc">
+      <DependentUpon>BMMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BMMDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>BMMDataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="BMMDataSet.xss">
+      <DependentUpon>BMMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Reports\SurgeryPrintOut.rdlc" />
+    <EmbeddedResource Include="Reports\TestPrintOut.rdlc" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>14263</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:14263/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>http://dma:25532</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,437 @@
+﻿/*Telerik RadCalendar DMA skin*/
+
+table.RadCalendar_DMA
+{
+	background:#fff;
+	font:12px "segoe ui",arial,sans-serif;
+}
+
+/*titlebar*/
+
+.RadCalendar_DMA .rcTitlebar
+{
+	border-color: Black;
+	background:blue 0 -1000px repeat-x url('/Images/DMA/Sprites/CalenderSprite_DMA.gif');
+	color:#000;
+}
+
+.RadCalendar_DMA .rcTitlebar table
+{
+	font:12px/23px "segoe ui",arial,sans-serif;
+}
+
+.RadCalendar_DMA .rcTitlebar td
+{
+	padding:0 0 1px;
+}
+
+.RadCalendar_DMA .rcTitlebar .rcPrev,
+.RadCalendar_DMA .rcTitlebar .rcNext,
+.RadCalendar_DMA .rcTitlebar .rcFastPrev,
+.RadCalendar_DMA .rcTitlebar .rcFastNext
+{
+	background-image:url('/Images/DMA/Sprites/CalenderSprite_DMA.gif');
+	color:#ccc;
+}
+
+.RadCalendar_DMA .rcTitlebar .rcFastPrev
+{
+	margin-left:6px;
+	background-position:1px -197px;
+}
+
+.RadCalendar_DMA .rcTitlebar a.rcFastPrev:hover
+{
+	background-position:1px -247px;
+}
+
+.RadCalendar_DMA .rcTitlebar .rcPrev
+{
+	background-position:4px -297px;
+}
+
+.RadCalendar_DMA .rcTitlebar a.rcPrev:hover
+{
+	background-position:4px -347px;
+}
+
+.RadCalendar_DMA .rcTitlebar .rcNext
+{
+	background-position:3px -397px;
+}
+
+.RadCalendar_DMA .rcTitlebar a.rcNext:hover
+{
+	background-position:3px -447px;
+}
+
+.RadCalendar_DMA .rcTitlebar .rcFastNext
+{
+	margin-right:6px;
+	background-position:1px -497px;
+}
+
+.RadCalendar_DMA .rcTitlebar a.rcFastNext:hover
+{
+	background-position:1px -547px;
+}
+
+.RadCalendar_DMA .rcMain
+{
+	border-color:#868686;
+}
+
+.RadCalendar_DMA .rcMainTable
+{
+	font:12px/17px "segoe ui",arial,sans-serif;
+}
+
+/*header, footer*/
+
+.RadCalendar_DMA .rcHeader,
+.RadCalendar_DMA .rcFooter
+{
+	border-color:#868686;
+}
+
+/*week numbers and days*/
+
+.RadCalendar_DMA .rcWeek th
+{
+	border-bottom:1px solid #c5c5c5;
+	padding:4px 6px 3px 0;
+	color:#333;
+}
+
+.RadCalendar_DMA .rcWeek .rcViewSel,
+.RadCalendar_DMA .rcRow th
+{
+	width:13px;
+	padding:0 7px 0 9px;
+	background:#eee;
+}
+
+.RadCalendar_DMA .rcRow th
+{
+	color:#777;
+}
+
+/*date cells*/
+
+.RadCalendar_DMA .rcRow td
+{
+	border-color:#fff;
+}
+
+.RadCalendar_DMA .rcMain .rcRow a,
+.RadCalendar_DMA .rcMain .rcRow span
+{
+	color:#333;
+}
+
+.RadCalendar_DMA .rcMain .rcWeekend a
+{
+	color:#666;
+}
+
+.RadCalendar_DMA .rcRow .rcToday
+{
+	border-color:#898989;
+}
+
+.RadCalendar_DMA .rcMain .rcOtherMonth a
+{
+	color:#898989;
+}
+
+.RadCalendar_DMA .rcMain .rcOutOfRange span
+{
+	color:#898989;
+}
+
+.RadCalendar_DMA .rcRow .rcSelected
+{
+	border-color:#8d8d8d #7d7d7d #6c6c6c;
+	background:#828282 0 -1700px repeat-x url('/Images/DMA/Sprites/CalenderSprite_DMA.gif');
+}
+
+.RadCalendar_DMA .rcMain .rcRow .rcSelected a
+{
+	color:#fff;
+}
+
+.RadCalendar_DMA .rcRow .rcHover
+{
+	border-color:#c4c4c4 #b2b2b2 #9e9e9e;
+	background:#c5c5c5 0 -1600px repeat-x url('/Images/DMA/Sprites/CalenderSprite_DMA.gif');
+}
+
+.RadCalendar_DMA .rcMain .rcRow .rcHover a
+{
+	color:#333;
+}
+
+/*multimonth view*/
+
+.RadCalendarMultiView_DMA .rcTitlebar
+{
+	border-color:#9a9a9a #9c9c9c #9c9c9c;
+	background:#c5c5c5 0 -1199px repeat-x url('/Images/DMA/Sprites/CalenderSprite_DMA.gif');
+}
+
+.RadCalendarMultiView_DMA .rcTitlebar table
+{
+	border:1px solid;
+	border-color:#fdfdfd #f3f3f3 #e7e7e7;
+	line-height:27px;
+}
+
+.RadCalendarMultiView_DMA .rcTitlebar a.rcFastPrev:hover
+{
+	background-position:1px -647px;
+}
+
+.RadCalendarMultiView_DMA .rcTitlebar a.rcPrev:hover
+{
+	background-position:4px -747px;
+}
+
+.RadCalendarMultiView_DMA .rcTitlebar a.rcNext:hover
+{
+	background-position:3px -847px;
+}
+
+.RadCalendarMultiView_DMA .rcTitlebar a.rcFastNext:hover
+{
+	background-position:1px -947px;
+}
+
+.RadCalendarMultiView_DMA .rcMain
+{
+	border-color:#9b9b9b;
+}
+
+.RadCalendarMultiView_DMA .rcCalendar
+{
+	border-color:#868686;
+}
+
+.RadCalendarMultiView_DMA .rcCalendar .rcMainTable
+{
+	height:176px;
+}
+
+.RadCalendarMultiView_DMA .rcMainTable .rcTitle
+{
+	border-color:#c4c4c4;
+	padding:0 0 2px;
+	background:#eaeaea 0 -1000px repeat-x url('/Images/DMA/Sprites/CalenderSprite_DMA.gif');
+	line-height:22px;
+}
+
+/*month view*/
+
+table.RadCalendarMonthView_DMA
+{
+	border-color:#979797;
+	background:#fff;
+	font:12px "segoe ui",arial,sans-serif;
+	color:#333;
+}
+
+.RadCalendarMonthView_DMA #rcMView_Feb,
+.RadCalendarMonthView_DMA #rcMView_Apr,
+.RadCalendarMonthView_DMA #rcMView_Jun,
+.RadCalendarMonthView_DMA #rcMView_Aug,
+.RadCalendarMonthView_DMA #rcMView_Oct,
+.RadCalendarMonthView_DMA #rcMView_Dec
+{
+	border-right:1px solid #e0e0e0;
+}
+
+.RadCalendarMonthView_DMA a
+{
+	color:#333;
+}
+
+.RadCalendarMonthView_DMA .rcSelected a
+{
+	border-color:#8d8d8d #7d7d7d #6c6c6c;
+	background:#828282 0 -1700px repeat-x url('/Images/DMA/Sprites/CalenderSprite_DMA.gif');
+	color:#fff;
+}
+
+.RadCalendarMonthView_DMA #rcMView_PrevY a,
+.RadCalendarMonthView_DMA #rcMView_NextY a
+{
+	width:17px;
+	height:14px;
+	background-image:url('/Images/DMA/Sprites/CalenderSprite_DMA.gif');
+	color:#ccc;
+}
+
+.RadCalendarMonthView_DMA #rcMView_PrevY a
+{
+	background-position:7px -196px;
+}
+
+.RadCalendarMonthView_DMA #rcMView_NextY a
+{
+	background-position:7px -496px;
+}
+
+.RadCalendarMonthView_DMA .rcButtons
+{
+	padding:6px 7px 5px;
+}
+
+.RadCalendarMonthView_DMA input
+{
+	border-color:#a7a7a7 #7b7b7b #7b7b7b #a7a7a7;
+	background:#e9e9e9 0 -2300px repeat-x url('/Images/DMA/Sprites/CalenderSprite_DMA.gif');
+	color:#000;
+	font:12px "segoe ui",arial,sans-serif;
+}
+
+/*time view*/
+
+table.RadCalendarTimeView_DMA
+{
+	border-color:#868686;
+	background:#fff;
+	font:12px "segoe ui",arial,sans-serif;
+}
+
+.RadCalendarTimeView_DMA th
+{
+	border-bottom:1px solid #c4c4c4;
+	padding:0 0 1px;
+	background:#eaeaea 0 -1000px repeat-x url('/Images/DMA/Sprites/CalenderSprite_DMA.gif');
+	color:#000;
+	line-height:23px;
+}
+
+table.RadCalendarTimeView_DMA td
+{
+	border-color:#c5c5c5;
+}
+
+.RadCalendarTimeView_DMA a
+{
+	color:#333;
+}
+
+.RadCalendarTimeView_DMA td.rcSelected a
+{
+	border-color:#8d8d8d #7d7d7d #6c6c6c;
+	background:#828282 0 -1700px repeat-x url('/Images/DMA/Sprites/CalenderSprite_DMA.gif');
+	color:#fff;
+}
+
+.RadCalendarTimeView_DMA td.rcHover a
+{
+	border-color:#c4c4c4 #b2b2b2 #9e9e9e;
+	background:#c5c5c5 0 -1600px repeat-x url('/Images/DMA/Sprites/CalenderSprite_DMA.gif');
+	color:#000;
+}
+
+.RadCalendarTimeView_DMA .rcFooter
+{
+	border-color:#c5c5c5;
+}
+
+/*pickers*/
+
+.RadPicker_DMA .rcCalPopup,
+.RadPicker_DMA .rcTimePopup
+{
+	background-image:url('/Images/DMA/Sprites/CalenderSprite_DMA.gif');
+}
+
+.RadPicker_DMA .rcCalPopup,
+.RadPicker_DMA a.rcDisabled.rcCalPopup:hover
+{
+	background-position:0 0;
+}
+
+.RadPicker_DMA a.rcCalPopup:hover,
+.RadPicker_DMA a.rcCalPopup:focus,
+.RadPicker_DMA a.rcCalPopup:active
+{
+	background-position:0 -50px;
+}
+
+.RadPicker_DMA .rcTimePopup,
+.RadPicker_DMA a.rcDisabled.rcTimePopup:hover
+{
+	background-position:0 -100px;
+}
+
+.RadPicker_DMA a.rcTimePopup:hover,
+.RadPicker_DMA a.rcTimePopup:focus,
+.RadPicker_DMA a.rcTimePopup:active
+{
+	background-position:0 -150px;
+}
+
+/*rtl*/
+
+.RadCalendarRTL_DMA .rcTitlebar .rcFastPrev
+{
+	background-position:1px -497px;
+}
+
+.RadCalendarRTL_DMA .rcTitlebar a.rcFastPrev:hover
+{
+	background-position:1px -547px;
+}
+
+.RadCalendarRTL_DMA .rcTitlebar .rcPrev
+{
+	background-position:3px -397px;
+}
+
+.RadCalendarRTL_DMA .rcTitlebar a.rcPrev:hover
+{
+	background-position:3px -447px;
+}
+
+.RadCalendarRTL_DMA .rcTitlebar .rcNext
+{
+	background-position:4px -297px;
+}
+
+.RadCalendarRTL_DMA .rcTitlebar a.rcNext:hover
+{
+	background-position:4px -347px;
+}
+
+.RadCalendarRTL_DMA .rcTitlebar .rcFastNext
+{
+	background-position:1px -197px;
+}
+
+.RadCalendarRTL_DMA .rcTitlebar a.rcFastNext:hover
+{
+	background-position:1px -247px;
+}
+
+.RadCalendarMultiViewRTL_DMA .rcTitlebar a.rcFastPrev:hover
+{
+	background-position:1px -947px;
+}
+
+.RadCalendarMultiViewRTL_DMA .rcTitlebar a.rcPrev:hover
+{
+	background-position:3px -847px;
+}
+
+.RadCalendarMultiViewRTL_DMA .rcTitlebar a.rcNext:hover
+{
+	background-position:4px -747px;
+}
+
+.RadCalendarMultiViewRTL_DMA .rcTitlebar a.rcFastNext:hover
+{
+	background-position:1px -647px;
+}

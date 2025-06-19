@@ -1,0 +1,32 @@
+CREATE TABLE [dbo].[OLD_DATAMIGRATION_DMA_SURGERY_CalcTestListTemp]
+(
+[InvoiceNumber] [int] NULL,
+[TestCosts] [float] NULL,
+[TestCostsNet] [float] NULL,
+[PPODisc] [float] NULL,
+[InterestByDate] [float] NULL,
+[DateScheduled] [datetime] NULL,
+[InterestDue] [float] NULL,
+[Name] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Client Name] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Client Last Name] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Notes] [ntext] COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[attorneyName] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[abbrev] [nvarchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EndingBalance] [float] NULL,
+[Balance] [float] NULL,
+[Attorney No] [int] NULL,
+[PaymentTotals] [float] NULL,
+[Company] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Company2] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[amortization] [datetime] NULL,
+[TestType] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FirstTestDate] [datetime] NULL,
+[COGS] [float] NULL,
+[Revenue] [float] NULL,
+[ContractRevenue] [float] NULL,
+[TotalRevenue] [float] NULL,
+[maturity] [datetime] NULL,
+[amortyear] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
