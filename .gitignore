@@ -1,0 +1,66 @@
+## Ignore build results
+bin/
+obj/
+[Bb]uild/
+[Bb]uilds/
+_ReSharper*/
+
+## Ignore user-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vsp
+
+## IIS Express
+/.vs/
+/.vsconfig
+*.vscode/
+
+## Packages
+packages/
+*.nupkg
+*.snupkg
+*.nuspec
+*.psmdcp
+
+## ASP.NET temp files
+App_Data/
+*.log
+*.dbmdl
+*.ldf
+*.mdf
+
+## Web Publish artifacts
+[Bb]ackup*/
+PublishProfiles/
+*.publishsettings
+
+## Rider project files
+.idea/
+
+## Visual Studio Code settings
+.vscode/
+
+## NuGet
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## Windows-specific files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+## Mac OS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+## Logs
+*.log
+
+## Optional: Ignore test results
+TestResults/
+*.TestResults
